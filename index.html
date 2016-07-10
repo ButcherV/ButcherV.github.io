@@ -452,6 +452,7 @@
 <h2 id="代码规范"><a href="#代码规范" class="headerlink" title="代码规范"></a>代码规范</h2><ul>
 <li>0替换0px。</li>
 <li>在定义无边框样式时，使用 0 代替 none。</li>
+<li>黑白两色无需颜色变量，用#fff和#000代替white和black</li>
 <li>嵌套选择器<ul>
 <li>请不要让嵌套选择器的深度超过 4 层。</li>
 <li>当遇到以上情况的时候，你也许是这样写 CSS 的：<ul>
@@ -464,13 +465,11 @@
 </li>
 </ul>
 <h2 id="命名规范"><a href="#命名规范" class="headerlink" title="命名规范"></a>命名规范</h2><ul>
-<li>class用横线分割的小写组合：.link-style</li>
-<li>ID选择器以#开头，用大写开始的驼峰形式：#App, #AppContainer。尽量不要使用 ID 选择器</li>
-</ul>
-<h3 id="命名原则"><a href="#命名原则" class="headerlink" title="命名原则"></a>命名原则</h3><ul>
-<li>去ID、去层级、去标签（虽可用来避免冲突，但抑制了重用性，渲染起来也慢）</li>
+<li>class用横线分割的小写组合：.link-style（可参考<a href="https://www.zhihu.com/question/21935157" target="_blank" rel="external">BEM</a>方式）</li>
+<li>ID选择器以#开头，用大写开始的驼峰形式：#App, #AppContainer。尽量不要使用 ID 选择器<h3 id="命名原则"><a href="#命名原则" class="headerlink" title="命名原则"></a>命名原则</h3></li>
+<li>去ID、尽量去层级、去标签（虽可用来避免冲突，但抑制了重用性，渲染起来也慢）</li>
 <li>对于网站非通用元素，如果样式简单，对其分离并使用面向属性的命名方法。（可参考<a href="http://getbootstrap.com/2.3.2/" target="_blank" rel="external">bootstrap</a>）</li>
-<li>对于网站通用元素，可用语义强烈的命名法抽取类置于单独的scss文件。</li>
+<li>对于网站通用元素，可用语义强烈的命名法抽取为组件并置于单独的scss文件。</li>
 <li>可多用@extend，来有效复用样式而不增加HTML代码量。</li>
 </ul>
 <h2 id="特殊要求"><a href="#特殊要求" class="headerlink" title="特殊要求"></a>特殊要求</h2><ul>
