@@ -29,7 +29,7 @@
 
   
   
-  <link href="/vendors/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+  <link href="/public/categories/overview/vendors/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
 
 
 
@@ -63,9 +63,9 @@
 
 
 
-<link href="/vendors/font-awesome/css/font-awesome.min.css?v=4.4.0" rel="stylesheet" type="text/css" />
+<link href="/public/categories/overview/vendors/font-awesome/css/font-awesome.min.css?v=4.4.0" rel="stylesheet" type="text/css" />
 
-<link href="/css/main.css?v=5.0.1" rel="stylesheet" type="text/css" />
+<link href="/public/categories/overview/css/main.css?v=5.0.1" rel="stylesheet" type="text/css" />
 
 
   <meta name="keywords" content="Hexo, NexT" />
@@ -77,50 +77,29 @@
 
 
 
-  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.0.1" />
+  <link rel="shortcut icon" type="image/x-icon" href="/public/categories/overview/favicon.ico?v=5.0.1" />
 
 
 
 
 
 
-<meta name="description" content="层级代码格式
-缩进不允许使用Tab，只可以使用两个空格
-在一个规则声明中应用了多个选择器时，每个选择器独占一行
-在规则声明的左大括号 { 前加上一个空格。规则声明的右大括号 } 独占一行
-规则声明之间用空行分隔开
-在属性的冒号 : 后面加上一个空格。
-属性声明的排序
-首先列出除去 @include 和嵌套选择器之外的所有属性声明。
-紧随后面的是 @include
-如果有必要_用到嵌套选择器，把它们">
+<meta name="description" content="层级├── assets/styles/
+    ├── component/    # Styles for particular components, these components might be used across modules
+    ├── deprecated/   # Uncategorised styles, all the styles should move to">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Code Guidelines">
 <meta property="og:url" content="http://yoursite.com/2016/07/08/Code-Guidelines/index.html">
 <meta property="og:site_name" content="FISHEYE-UI">
-<meta property="og:description" content="层级代码格式
-缩进不允许使用Tab，只可以使用两个空格
-在一个规则声明中应用了多个选择器时，每个选择器独占一行
-在规则声明的左大括号 { 前加上一个空格。规则声明的右大括号 } 独占一行
-规则声明之间用空行分隔开
-在属性的冒号 : 后面加上一个空格。
-属性声明的排序
-首先列出除去 @include 和嵌套选择器之外的所有属性声明。
-紧随后面的是 @include
-如果有必要_用到嵌套选择器，把它们">
-<meta property="og:updated_time" content="2016-07-08T01:10:54.000Z">
+<meta property="og:description" content="层级├── assets/styles/
+    ├── component/    # Styles for particular components, these components might be used across modules
+    ├── deprecated/   # Uncategorised styles, all the styles should move to">
+<meta property="og:updated_time" content="2016-07-10T17:39:33.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Code Guidelines">
-<meta name="twitter:description" content="层级代码格式
-缩进不允许使用Tab，只可以使用两个空格
-在一个规则声明中应用了多个选择器时，每个选择器独占一行
-在规则声明的左大括号 { 前加上一个空格。规则声明的右大括号 } 独占一行
-规则声明之间用空行分隔开
-在属性的冒号 : 后面加上一个空格。
-属性声明的排序
-首先列出除去 @include 和嵌套选择器之外的所有属性声明。
-紧随后面的是 @include
-如果有必要_用到嵌套选择器，把它们">
+<meta name="twitter:description" content="层级├── assets/styles/
+    ├── component/    # Styles for particular components, these components might be used across modules
+    ├── deprecated/   # Uncategorised styles, all the styles should move to">
 
 
 
@@ -172,7 +151,7 @@
   
 
   <div class="custom-logo-site-title">
-    <a href="/"  class="brand" rel="start">
+    <a href="/public/categories/overview/"  class="brand" rel="start">
       <span class="logo-line-before"><i></i></span>
       <span class="site-title">FISHEYE-UI</span>
       <span class="logo-line-after"><i></i></span>
@@ -197,7 +176,7 @@
       
         
         <li class="menu-item menu-item-overview">
-          <a href="/categories/overview" rel="section">
+          <a href="/public/categories/overview/categories/overview" rel="section">
             
               <i class="menu-item-icon fa fa-fw fa-eye"></i> <br />
             
@@ -207,7 +186,7 @@
       
         
         <li class="menu-item menu-item-design">
-          <a href="/categories/button" rel="section">
+          <a href="/public/categories/overview/categories/button" rel="section">
             
               <i class="menu-item-icon fa fa-fw fa-paint-brush"></i> <br />
             
@@ -216,18 +195,8 @@
         </li>
       
         
-        <li class="menu-item menu-item-archives">
-          <a href="/archives" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
-            
-            Archives
-          </a>
-        </li>
-      
-        
         <li class="menu-item menu-item-tags">
-          <a href="/tags" rel="section">
+          <a href="/public/categories/overview/tags" rel="section">
             
               <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
             
@@ -237,7 +206,7 @@
       
         
         <li class="menu-item menu-item-categories">
-          <a href="/categories" rel="section">
+          <a href="/public/categories/overview/categories" rel="section">
             
               <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
             
@@ -309,7 +278,7 @@
               <span class="post-meta-item-text">In</span>
               
                 <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                  <a href="/categories/overview/" itemprop="url" rel="index">
+                  <a href="/public/categories/overview/categories/overview/" itemprop="url" rel="index">
                     <span itemprop="name">overview</span>
                   </a>
                 </span>
@@ -342,7 +311,14 @@
       
 
       
-        <h2 id="层级"><a href="#层级" class="headerlink" title="层级"></a>层级</h2><h2 id="代码格式"><a href="#代码格式" class="headerlink" title="代码格式"></a>代码格式</h2><ul>
+        <h2 id="层级"><a href="#层级" class="headerlink" title="层级"></a>层级</h2><pre><code>├── assets/styles/
+    ├── component/    # Styles for particular components, these components might be used across modules
+    ├── deprecated/   # Uncategorised styles, all the styles should move to more approppriate path
+    ├── module/       # Contains module-wise styles
+    ├── util/         # mixins, helpers, color, icon-font, etc...
+    ├── vendor/       # styles that are created by 3rd party. Keep it as few as possible
+    ├── xxx.scss      # Style that used by html
+</code></pre><h2 id="代码格式"><a href="#代码格式" class="headerlink" title="代码格式"></a>代码格式</h2><ul>
 <li>缩进不允许使用Tab，只可以使用两个空格</li>
 <li>在一个规则声明中应用了多个选择器时，每个选择器独占一行</li>
 <li>在规则声明的左大括号 { 前加上一个空格。规则声明的右大括号 } 独占一行</li>
@@ -351,18 +327,19 @@
 <li>属性声明的排序<ul>
 <li>首先列出除去 @include 和嵌套选择器之外的所有属性声明。</li>
 <li>紧随后面的是 @include</li>
-<li>如果有必要_用到嵌套选择器，把它们放到最后，在规则声明和嵌套选择器之间要加上空白</li>
+<li>如果有必要用到嵌套选择器，把它们放到最后，在规则声明和嵌套选择器之间要加上空白</li>
 </ul>
 </li>
 </ul>
 <p>Bad</p>
 <figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">.badcode&#123;</div><div class="line">    border-radius:50%;</div><div class="line">    border:2px solid white; &#125;</div><div class="line">.no, .nope, .not_good &#123;</div><div class="line">    // ...</div><div class="line">&#125;</div><div class="line">#lol-no &#123;</div><div class="line">  // ...</div><div class="line">&#125;</div></pre></td></tr></table></figure>
-<p>Good<br><figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line">.goodcode &#123;</div><div class="line">  border-radius: 50%;</div><div class="line">  border: 2px solid white;</div><div class="line">&#125;</div><div class="line"></div><div class="line">.one,</div><div class="line">.selector,</div><div class="line">.per-line &#123;</div><div class="line">  // ...</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<p>Good</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line">.goodcode &#123;</div><div class="line">  border-radius: 50%;</div><div class="line">  border: 2px solid white;</div><div class="line">&#125;</div><div class="line"></div><div class="line">.one,</div><div class="line">.selector,</div><div class="line">.per-line &#123;</div><div class="line">  // ...</div><div class="line">&#125;</div></pre></td></tr></table></figure>
 <h2 id="代码规范"><a href="#代码规范" class="headerlink" title="代码规范"></a>代码规范</h2><ul>
 <li>0替换0px。</li>
 <li>在定义无边框样式时，使用 0 代替 none。</li>
 <li>嵌套选择器<ul>
-<li>请不要让嵌套选择器的深度超过 3 层！</li>
+<li>请不要让嵌套选择器的深度超过 4 层。</li>
 <li>当遇到以上情况的时候，你也许是这样写 CSS 的：<ul>
 <li>与 HTML 强耦合的（也是脆弱的）或者</li>
 <li>过于具体（强大）或者</li>
@@ -373,12 +350,17 @@
 </li>
 </ul>
 <h2 id="命名规范"><a href="#命名规范" class="headerlink" title="命名规范"></a>命名规范</h2><ul>
-<li>类名建议使用破折号代替驼峰法。如果你使用 BEM，也可以使用下划线（参见下面的）</li>
 <li>class用横线分割的小写组合：.link-style</li>
 <li>ID选择器以#开头，用大写开始的驼峰形式：#App, #AppContainer。尽量不要使用 ID 选择器</li>
 </ul>
+<h3 id="命名原则"><a href="#命名原则" class="headerlink" title="命名原则"></a>命名原则</h3><ul>
+<li>去ID、去层级、去标签（虽可用来避免冲突，但抑制了重用性，渲染起来也慢）</li>
+<li>对于网站非通用元素，如果样式简单，对其分离并使用面向属性的命名方法。（可参考<a href="http://getbootstrap.com/2.3.2/" target="_blank" rel="external">bootstrap</a>）</li>
+<li>对于网站通用元素，可用语义强烈的命名法抽取类置于单独的scss文件。</li>
+<li>可多用@extend，来有效复用样式而不增加HTML代码量。</li>
+</ul>
 <h2 id="特殊要求"><a href="#特殊要求" class="headerlink" title="特殊要求"></a>特殊要求</h2><ul>
-<li>所有新增的代码，禁止使用jQuery-ui和bootstrap</li>
+<li>禁止使用jQuery-ui和bootstrap</li>
 <li>建议安装<a href="https://rubygems.org/gems/scss-lint" target="_blank" rel="external">scss-lint</a>和<a href="https://rubygems.org/gems/slim_lint" target="_blank" rel="external">slim_lint</a>以开启自动检查，以免不必要的格式错误</li>
 </ul>
 
@@ -405,13 +387,13 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2016/07/05/Introduction/" rel="next" title="Introduction">
-                <i class="fa fa-chevron-left"></i> Introduction
-              </a>
-            
           </div>
 
           <div class="post-nav-prev post-nav-item">
+            
+              <a href="/public/categories/overview/2016/07/08/Introduction/" rel="prev" title="Introduction">
+                Introduction <i class="fa fa-chevron-right"></i>
+              </a>
             
           </div>
         </div>
@@ -471,23 +453,23 @@
       <section class="site-overview sidebar-panel ">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
-               src="/images/smartx-logo.svg"
+               src="/public/categories/overview/images/smartx-logo.svg"
                alt="" />
           <p class="site-author-name" itemprop="name"></p>
           <p class="site-description motion-element" itemprop="description"></p>
         </div>
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
-            <a href="/archives">
-              <span class="site-state-item-count">7</span>
+            <a href="/public/categories/overview/">
+              <span class="site-state-item-count">2</span>
               <span class="site-state-item-name">posts</span>
             </a>
           </div>
 
           
             <div class="site-state-item site-state-categories">
-              <a href="/categories">
-                <span class="site-state-item-count">4</span>
+              <a href="/public/categories/overview/categories">
+                <span class="site-state-item-count">3</span>
                 <span class="site-state-item-name">categories</span>
               </a>
             </div>
@@ -538,7 +520,7 @@
               
             
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#层级"><span class="nav-number">1.</span> <span class="nav-text">层级</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#代码格式"><span class="nav-number">2.</span> <span class="nav-text">代码格式</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#代码规范"><span class="nav-number">3.</span> <span class="nav-text">代码规范</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#命名规范"><span class="nav-number">4.</span> <span class="nav-text">命名规范</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#特殊要求"><span class="nav-number">5.</span> <span class="nav-text">特殊要求</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#层级"><span class="nav-number">1.</span> <span class="nav-text">层级</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#代码格式"><span class="nav-number">2.</span> <span class="nav-text">代码格式</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#代码规范"><span class="nav-number">3.</span> <span class="nav-text">代码规范</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#命名规范"><span class="nav-number">4.</span> <span class="nav-text">命名规范</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#命名原则"><span class="nav-number">4.1.</span> <span class="nav-text">命名原则</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#特殊要求"><span class="nav-number">5.</span> <span class="nav-text">特殊要求</span></a></li></ol></div>
             
           </div>
         </section>
@@ -607,53 +589,53 @@
 
 
   
-  <script type="text/javascript" src="/vendors/jquery/index.js?v=2.1.3"></script>
+  <script type="text/javascript" src="/public/categories/overview/vendors/jquery/index.js?v=2.1.3"></script>
 
   
-  <script type="text/javascript" src="/vendors/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  <script type="text/javascript" src="/public/categories/overview/vendors/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
 
   
-  <script type="text/javascript" src="/vendors/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  <script type="text/javascript" src="/public/categories/overview/vendors/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
 
   
-  <script type="text/javascript" src="/vendors/velocity/velocity.min.js?v=1.2.1"></script>
+  <script type="text/javascript" src="/public/categories/overview/vendors/velocity/velocity.min.js?v=1.2.1"></script>
 
   
-  <script type="text/javascript" src="/vendors/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  <script type="text/javascript" src="/public/categories/overview/vendors/velocity/velocity.ui.min.js?v=1.2.1"></script>
 
   
-  <script type="text/javascript" src="/vendors/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
-
-
-  
-
-
-  <script type="text/javascript" src="/js/src/utils.js?v=5.0.1"></script>
-
-  <script type="text/javascript" src="/js/src/motion.js?v=5.0.1"></script>
-
-
-
-  
-  
-
-
-  <script type="text/javascript" src="/js/src/affix.js?v=5.0.1"></script>
-
-  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.0.1"></script>
-
-
-
-  
-  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.0.1"></script>
-<script type="text/javascript" src="/js/src/post-details.js?v=5.0.1"></script>
-
+  <script type="text/javascript" src="/public/categories/overview/vendors/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
 
 
   
 
 
-  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.0.1"></script>
+  <script type="text/javascript" src="/public/categories/overview/js/src/utils.js?v=5.0.1"></script>
+
+  <script type="text/javascript" src="/public/categories/overview/js/src/motion.js?v=5.0.1"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/public/categories/overview/js/src/affix.js?v=5.0.1"></script>
+
+  <script type="text/javascript" src="/public/categories/overview/js/src/schemes/pisces.js?v=5.0.1"></script>
+
+
+
+  
+  <script type="text/javascript" src="/public/categories/overview/js/src/scrollspy.js?v=5.0.1"></script>
+<script type="text/javascript" src="/public/categories/overview/js/src/post-details.js?v=5.0.1"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/public/categories/overview/js/src/bootstrap.js?v=5.0.1"></script>
 
 
 
