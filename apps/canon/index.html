@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+  <head><script>(() => {
+  const url = new URL(location.href);
+  const route = url.searchParams.get('__pages_route');
+  if (route && (!route.startsWith('/') || route.startsWith('//'))) return;
+  const destination = route ? new URL(route, location.origin) : url;
+  if (destination.origin !== location.origin) return;
+  const pathname = destination.pathname.startsWith('/apps/') ? destination.pathname : destination.pathname.replace(/\/$/, '') || '/';
+  history.replaceState(null, '', pathname + destination.search + destination.hash);
+})();</script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#ffffff" />
+    <link rel="icon" href="/apps/canon/favicon.svg" type="image/svg+xml" />
+    <title>Canon Score Follower</title>
+    <script type="module" crossorigin src="/apps/canon/assets/index-DsNB1_YT.js"></script>
+    <link rel="stylesheet" crossorigin href="/apps/canon/assets/index-CloA7Q3e.css">
+  </head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>

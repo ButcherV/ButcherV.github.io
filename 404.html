@@ -1,0 +1,11 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>页面跳转</title><script>(() => {
+  const path = location.pathname;
+  // Missing files must remain a real 404, rather than loading a different app.
+  if (path.split('/').pop().includes('.')) return;
+  const app = path.match(/^\/apps\/(hiyori|stack|canon)(?:\/|$)/);
+  if (path.startsWith('/apps/') && !app) return;
+  const entry = app ? '/apps/' + app[1] + '/' : '/';
+  const url = new URL(entry, location.origin);
+  url.searchParams.set('__pages_route', path + location.search + location.hash);
+  location.replace(url.href);
+})();</script></head><body><p>页面不存在。<a href="/">返回首页</a></p></body></html>

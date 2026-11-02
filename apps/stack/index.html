@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head><script>(() => {
+  const url = new URL(location.href);
+  const route = url.searchParams.get('__pages_route');
+  if (route && (!route.startsWith('/') || route.startsWith('//'))) return;
+  const destination = route ? new URL(route, location.origin) : url;
+  if (destination.origin !== location.origin) return;
+  const pathname = destination.pathname.startsWith('/apps/') ? destination.pathname : destination.pathname.replace(/\/$/, '') || '/';
+  history.replaceState(null, '', pathname + destination.search + destination.hash);
+})();</script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg+xml" href="/apps/stack/favicon.svg" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/apps/stack/favicon-32.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apps/stack/apple-touch-icon.png" />
+    <title>AI Stack Map</title>
+    <script type="module" crossorigin src="/apps/stack/assets/index-BrsHlltZ.js"></script>
+    <link rel="stylesheet" crossorigin href="/apps/stack/assets/index-JvRtjg1r.css">
+  <script src="/stack-showcase.js"></script></head>
+  <body>
+    <div id="root">
+      <!-- 数据加载期间的占位；React 挂载后会替换掉 -->
+      <div style="display:grid;place-items:center;min-height:100vh;font:500 13px/1.6 system-ui,sans-serif;color:#8b96a5">
+        正在加载…
+      </div>
+    </div>
+  </body>
+</html>

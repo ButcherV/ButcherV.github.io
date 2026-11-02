@@ -1,0 +1,1038 @@
+<html lang="en">
+<head>
+
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+<title>CloudTower</title>
+<link rel="stylesheet" type="text/css" href="./style/style.css">
+<link rel="stylesheet" type="text/css" href="./style/font/inter/inter.css">
+<link rel="stylesheet" type="text/css" href="./style/var.css">
+<script src="./js/noframework.waypoints.min.js"></script>
+</head>
+<body id="body" class="" onclick="closeFloat();" onkeydown="openSearch(event);">
+<div id="interface" class="interface">
+<header>
+<div class="flex left">
+<img class="logo" src="./style/img/cloudtower_logo_header.png" alt="CloudTower" />
+<div id="main-nav" class="main-nav">
+<div class="box">
+<div class="main-nav-btn shimmer" onclick="expandMainNav();">
+<div class="title">Infrastructure</div><div class="icon"></div>
+</div>
+</div>
+<div class="menu large main-nav-menu">
+<ul class="section">
+<div class="group">
+<li class="infrastructure selected" onclick="expandMainNav();">
+<span class="icon"></span>
+<span class="label">Infrastructure</span>
+</li>
+</div>
+<div class="group">
+<li class="alert" onclick="expandMainNav();">
+<span class="icon"></span>
+<span class="label">Alert</span>
+</li>
+<li class="monitoring-analysis" onclick="expandMainNav();">
+<span class="icon"></span>
+<span class="label">Monitoring Analysis</span>
+</li>
+<li class="resource-optimization" onclick="expandMainNav();">
+<span class="icon"></span>
+<span class="label">Resource Optimization</span>
+</li>
+<li class="report" onclick="expandMainNav();">
+<span class="icon"></span>
+<span class="label">Report</span>
+</li>
+<li class="task" onclick="expandMainNav();">
+<span class="icon"></span>
+<span class="label">Task</span>
+</li>
+<li class="recycle-bin" onclick="expandMainNav();">
+<span class="icon"></span>
+<span class="label">Recycle Bin</span>
+</li>
+</div>
+</ul>
+<ul class="section">
+<div class="group">
+<li class="setting" onclick="expandMainNav();">
+<span class="icon"></span>
+<span class="label">Setting</span>
+</li>
+</div>
+</ul>
+</div>
+</div>
+<div class="group">
+<div id="search-box" class="btn" onclick="focusSearchBox();" title="Search on the current page or global.">
+<div class="search"></div>
+<span id="token" class="token">Search within the current page</span>
+<input id="search-field" onkeydown="deleteTag(event);" placeholder="Type in to search…" class="field"></input>
+</div>
+</div>
+</div>
+<div id="flexCenter" class="flex center">
+<div class="box main">
+<div class="org">Organization Name</div>
+</div>
+<div class="box context">
+<div class="page-title">
+<div class="resource-name">Host in Infrastructure</div>
+<div class="page-name-dropdown">Virtual Machine</div>
+</div>
+</div>
+</div>
+<div id="flexRight" class="flex right">
+<div class="contextual">
+<div class="box">
+<div class="btn export" title="Export data as a CSV file."></div>
+<div class="btn create" title="Create or upload virtualization resources, add hosts, associate clusters, or create Datacenters.">
+<div class="icon add"></div>
+<div class="icon chevron"></div>
+</div>
+</div>
+</div>
+<div class="group">
+<div class="btn" title="Preview recent alerts."><div class="alert badge"></div></div>
+<div class="btn" title="Preview recent tasks."><div class="task"></div></div>
+<div class="btn"><div class="avatar"><span>J</span></div></div>
+</div>
+</div>
+</header>
+<main>
+<aside class="left-nav">
+<nav class="main-menu">
+<ul>
+<li><div>Dashboard</div></li>
+<li class="activated"><div>Infrastructure</div></li>
+<li><div>Monitoring Analysis</div></li>
+<li><div>Resource Optimization</div></li>
+<li><div>Report</div></li>
+<li><div>Event Audit</div></li>
+<li><div>Settings</div></li>
+</ul>
+</nav>
+<nav class="topo-menu">
+<div class="tree-diagram">
+<ul class="org-level">
+<li class="infrastructure activated healthy">
+<dl class="level-item">
+<dt class="term">
+<div class="response-area">
+<span class="handle">
+<span class="icon"></span>
+</span>
+<span class="resource-icon"></span>
+</div>
+<span>Infrastructure</span>
+</dt>
+<dd class="detail"></dd>
+</dl>
+<ul class="primary-level">
+<li class="datacenter">
+<dl class="level-item">
+<dt class="term">
+<div class="response-area">
+<span class="handle">
+<span class="icon"></span>
+</span>
+<span class="resource-icon"></span>
+</div>
+<span>Datacenter Name</span>
+</dt>
+<dd class="detail"></dd>
+</dl>
+<ul class="secondary-level">
+<li class="cluster">
+<dl class="level-item">
+<dt class="term">
+<div class="response-area">
+<span class="handle">
+<span class="icon"></span>
+</span>
+<span class="resource-icon"></span>
+</div>
+<span>Cluster Name</span>
+</dt>
+<dd class="detail"></dd>
+</dl>
+<ul class="tertiary-level">
+<li class="host">
+<dl class="level-item">
+<dt class="term">
+<div class="response-area">
+<span class="resource-icon"></span>
+</div>
+<span>Host Name</span>
+</dt>
+<dd class="detail"></dd>
+</dl>
+</li>
+<li class="vmgroup">
+<dl class="level-item">
+<dt class="term">
+<div class="response-area">
+<span class="resource-icon"></span>
+</div>
+<span>VM Group Name</span>
+</dt>
+<dd class="detail"></dd>
+</dl>
+</li>
+<li class="vmgroup-not-grouped">
+<dl class="level-item">
+<dt class="term">
+<div class="response-area">
+<span class="resource-icon"></span>
+</div>
+<span>Not Grouped VM</span>
+</dt>
+<dd class="detail"></dd>
+</dl>
+</li>
+</ul>
+</li>
+<li class="cluster">
+<dl class="level-item">
+<dt class="term">
+<div class="response-area">
+<span class="handle">
+<span class="icon"></span>
+</span>
+<span class="resource-icon"></span>
+</div>
+<span>Cluster Name</span>
+</dt>
+<dd class="detail"></dd>
+</dl>
+</li>
+<li class="cluster loading">
+<dl class="level-item">
+<dt class="term">
+<div class="response-area">
+<span class="handle">
+<span class="icon"></span>
+</span>
+<span class="resource-icon"></span>
+</div>
+<span>Cluster Data Fetching</span>
+</dt>
+<dd class="detail"></dd>
+</dl>
+</li>
+</ul>
+</li>
+<li class="datacenter">
+<dl class="level-item">
+<dt class="term">
+<div class="response-area">
+<span class="handle">
+<span class="icon"></span>
+</span>
+<span class="resource-icon"></span>
+</div>
+<span>Datacenter Name</span>
+</dt>
+<dd class="detail"></dd>
+</dl>
+</li>
+<li class="cluster">
+<dl class="level-item">
+<dt class="term">
+<div class="response-area">
+<span class="handle">
+<span class="icon"></span>
+</span>
+<span class="resource-icon"></span>
+</div>
+<span>Cluster Name</span>
+</dt>
+<dd class="detail"></dd>
+</dl>
+</li>
+</ul>
+<div class="infra-statistics">4 Datacenters, 64 Clusters, 256 Hosts</div>
+</li>
+</ul>
+</div>
+<div class="advanced-settings"></div>
+</nav>
+</aside>
+<div id="main-page" class="main-page">
+<header>
+<div class="row crumbs">
+<div class="hierarchy primary" title="Infrastructure of SmartX Inc.">Infrastructure</div>
+<div class="hierarchy secondary" title="Parent Datacenter">Datacenter</div>
+<div class="hierarchy tertiary" title="Parent Cluster">Cluster</div>
+</div>
+<div class="row landlord">
+<div class="large-title">Host in Infrastructure</div>
+<div class="actions">
+<div class="contextual">
+<div class="btn export" title="Export data as a CSV file."></div>
+<div id="new-resource-menu" class="box">
+<div class="btn create" onclick="toggleNewResourceMenu();" title="Create or upload virtualization resources, add hosts, associate clusters, or create Datacenters.">
+<div class="icon add"></div>
+<div class="icon chevron"></div>
+</div>
+<div class="wrap">
+<div class="menu medium under-btn new-resource-menu">
+<ul class="section title">
+<div class="group">
+<li class="title">
+<span class="label">New Resource</span>
+</li>
+</div>
+</ul>
+<ul class="section with-degraded">
+<div class="group">
+<li class="create-vm-from-template" onclick="closeNewResourceMenu();">
+<span class="icon"></span>
+<span class="label">Create VM from Template</span>
+</li>
+<li class="create-blank-vm" onclick="openImmersiveDialogBox();">
+<span class="icon"></span>
+<span class="label">Create Blank VM</span>
+</li>
+</div>
+<div class="group degraded">
+<li class="upload-iso-image" onclick="closeNewResourceMenu();">
+<span class="icon"></span>
+<span class="label">Upload ISO Image</span>
+</li>
+</div>
+</ul>
+<ul class="section all-degraded">
+<div class="group degraded">
+<li class="associate-cluster" onclick="closeNewResourceMenu();">
+<span class="icon"></span>
+<span class="label">Associate Cluster</span>
+</li>
+<li class="create-datacenter" onclick="closeNewResourceMenu();">
+<span class="icon"></span>
+<span class="label">Create Datacenter</span>
+</li>
+</div>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="fixed"><div class="icon"></div></div>
+</div>
+</div>
+<div class="row submenu">
+<div id="submenu" class="drop-down">
+<div class="title">Virtual Machine</div>
+<div class="icon"></div>
+</div>
+</div>
+</header>
+<div class="table">
+<div class="thead">
+<div class="column name first sorted">
+<div class="checkbox"></div>
+<div class="label">Name</div>
+</div>
+<div class="column second status"><div class="label">Status</div></div>
+<div class="column third right"><div class="label">vCPU</div></div>
+<div class="column fourth right"><div class="label">vCPU Usage</div></div>
+<div class="column fifth right"><div class="label">Memory</div></div>
+<div class="column sixth right"><div class="label">Memory Usage</div></div>
+<div class="column seventh"><div class="label">IP Address</div></div>
+<div class="column more no-sort"><div class="icon"></div></div>
+</div>
+<div class="tbody">
+<div class="row">
+<div class="column first name sorted">
+<div class="checkbox"></div>
+<div class="label">yeji-pure-dev</div>
+</div>
+<div class="column second status running"><div class="icon"></div><div class="label">Running</div></div>
+<div class="column third right"><div class="label">4 <span class="text-secondary">Core</span></div></div>
+<div class="column fourth right"><span class="text-quaternary">-</span></div>
+<div class="column fifth right"><div class="label">4 <span class="text-secondary">GiB</span></div></div>
+<div class="column sixth right"><span class="text-quaternary">-</span></div>
+<div class="column seventh"><div class="label">192.168.100.255</div></div>
+<div class="column more no-sort"><div class="icon"></div></div>
+</div>
+<div class="row">
+<div class="column name first sorted">
+<div class="checkbox"></div>
+<div class="label">yiran-idc-installer-29.58</div>
+</div>
+<div class="column second status running"><div class="icon"></div><div class="label">Running</div></div>
+<div class="column third right"><div class="label">1 <span class="text-secondary">Core</span></div></div>
+<div class="column fourth right"><div class="label">1.98%</div></div>
+<div class="column fifth right"><div class="label">512 <span class="text-secondary">MiB</span></div></div>
+<div class="column sixth right"><div class="label">96%</div></div>
+<div class="column seventh"><div class="label">192.168.100.21</div></div>
+<div class="column more no-sort"><div class="icon"></div></div>
+</div>
+<div class="row">
+<div class="column name first sorted">
+<div class="checkbox"></div>
+<div class="label">bruce-win12</div>
+</div>
+<div class="column second status stopped"><div class="icon"></div><div class="label">Stopped</div></div>
+<div class="column third right"><div class="label">1 <span class="text-secondary">Core</span></div></div>
+<div class="column fourth right"><span class="text-quaternary">-</span></div>
+<div class="column fifth right"><div class="label">512 <span class="text-secondary">MiB</span></div></div>
+<div class="column sixth right"><span class="text-quaternary">-</span></div>
+<div class="column seventh"><span class="text-quaternary">-</span></div>
+<div class="column more no-sort"><div class="icon"></div></div>
+</div>
+<div class="row">
+<div class="column name first sorted">
+<div class="checkbox"></div>
+<div class="label">jiangbo-win10</div>
+</div>
+<div class="column second status running"><div class="icon"></div><div class="label">Running</div></div>
+<div class="column third right"><div class="label">4 <span class="text-secondary">Core</span></div></div>
+<div class="column fourth right"><div class="label">1.98%</div></div>
+<div class="column fifth right"><div class="label">4 <span class="text-secondary">GiB</span></div></div>
+<div class="column sixth right"><div class="label">70.33%</div></div>
+<div class="column seventh"><div class="label">192.168.1.82 <span class="text-secondary">还有 2 个</span></div></div>
+<div class="column more no-sort"><div class="icon"></div></div>
+</div>
+<div class="row">
+<div class="column name first sorted">
+<div class="checkbox"></div>
+<div class="label">yiran-win10-24.57</div>
+</div>
+<div class="column second status running"><div class="icon"></div><div class="label">Running</div></div>
+<div class="column third right"><div class="label">2 <span class="text-secondary">Core</span></div></div>
+<div class="column fourth right"><div class="label">5.21%</div></div>
+<div class="column fifth right"><div class="label">4 <span class="text-secondary">GiB</span></div></div>
+<div class="column sixth right"><div class="label">32.7%</div></div>
+<div class="column seventh"><span class="text-quaternary">-</span></div>
+<div class="column more no-sort"><div class="icon"></div></div>
+</div>
+<div class="row">
+<div class="column name first sorted">
+<div class="checkbox"></div>
+<div class="label">octopus-extension-1d311c9f</div>
+</div>
+<div class="column second status suspended"><div class="icon"></div><div class="label">Suspended</div></div>
+<div class="column third right"><div class="label">2 <span class="text-secondary">Core</span></div></div>
+<div class="column fourth right"><span class="text-quaternary">-</span></div>
+<div class="column fifth right"><div class="label">4 <span class="text-secondary">GiB</span></div></div>
+<div class="column sixth right"><span class="text-quaternary">-</span></div>
+<div class="column seventh"><span class="text-quaternary">-</span></div>
+<div class="column more no-sort"><div class="icon"></div></div>
+</div>
+<div class="row">
+<div class="column name first sorted">
+<div class="checkbox"></div>
+<div class="label">tianren-win7</div>
+</div>
+<div class="column second status stopped"><div class="icon"></div><div class="label">Stopped</div></div>
+<div class="column third right"><div class="label">2 <span class="text-secondary">Core</span></div></div>
+<div class="column fourth right"><span class="text-quaternary">-</span></div>
+<div class="column fifth right"><div class="label">4 <span class="text-secondary">GiB</span></div></div>
+<div class="column sixth right"><span class="text-quaternary">-</span></div>
+<div class="column seventh"><span class="text-quaternary">-</span></div>
+<div class="column more no-sort"><div class="icon"></div></div>
+</div>
+<div class="row">
+<div class="column name first sorted">
+<div class="checkbox"></div>
+<div class="label">fanyang-windev</div>
+</div>
+<div class="column second status unknown"><div class="icon"></div><div class="label">Unknown</div></div>
+<div class="column third right"><div class="label">2 <span class="text-secondary">Core</span></div></div>
+<div class="column fourth right"><span class="text-quaternary">-</span></div>
+<div class="column fifth right"><div class="label">4 <span class="text-secondary">GiB</span></div></div>
+<div class="column sixth right"><span class="text-quaternary">-</span></div>
+<div class="column seventh"><span class="text-quaternary">-</span></div>
+<div class="column more no-sort"><div class="icon"></div></div>
+</div>
+<div class="row">
+<div class="column name first sorted">
+<div class="checkbox"></div>
+<div class="label">gitlab-wechat-notifier</div>
+</div>
+<div class="column second status running"><div class="icon"></div><div class="label">Running</div></div>
+<div class="column third right"><div class="label">12 <span class="text-secondary">Core</span></div></div>
+<div class="column fourth right"><div class="label">1.02%</div></div>
+<div class="column fifth right"><div class="label">8 <span class="text-secondary">GiB</span></div></div>
+<div class="column sixth right"><div class="label">52.6%</div></div>
+<div class="column seventh"><div class="label">192.168.100.73</div></div>
+<div class="column more no-sort"><div class="icon"></div></div>
+</div>
+<div class="row">
+<div class="column name first sorted">
+<div class="checkbox"></div>
+<div class="label">fisheye-gitlab-runner1</div>
+</div>
+<div class="column second status stopped"><div class="icon"></div><div class="label">Stopped</div></div>
+<div class="column third right"><div class="label">8 <span class="text-secondary">Core</span></div></div>
+<div class="column fourth right"><span class="text-quaternary">-</span></div>
+<div class="column fifth right"><div class="label">8 <span class="text-secondary">GiB</span></div></div>
+<div class="column sixth right"><span class="text-quaternary">-</span></div>
+<div class="column seventh"><span class="text-quaternary">-</span></div>
+<div class="column more no-sort"><div class="icon"></div></div>
+</div>
+<div class="row">
+<div class="column name first sorted">
+<div class="checkbox"></div>
+<div class="label">fanyang-dev</div>
+</div>
+<div class="column second status running"><div class="icon"></div><div class="label">Running</div></div>
+<div class="column third right"><div class="label">2 <span class="text-secondary">Core</span></div></div>
+<div class="column fourth right"><div class="label">0.98%</div></div>
+<div class="column fifth right"><div class="label">4 <span class="text-secondary">GiB</span></div></div>
+<div class="column sixth right"><span class="text-quaternary">-</span></div>
+<div class="column seventh"><div class="label"><span class="text-quaternary">-</span></div></div>
+<div class="column more no-sort"><div class="icon"></div></div>
+</div>
+<div class="row">
+<div class="column first name sorted">
+<div class="checkbox"></div>
+<div class="label">yeji-pure-dev</div>
+</div>
+<div class="column second status running"><div class="icon"></div><div class="label">Running</div></div>
+<div class="column third right"><div class="label">4 <span class="text-secondary">Core</span></div></div>
+<div class="column fourth right"><span class="text-quaternary">-</span></div>
+<div class="column fifth right"><div class="label">4 <span class="text-secondary">GiB</span></div></div>
+<div class="column sixth right"><span class="text-quaternary">-</span></div>
+<div class="column seventh"><div class="label">192.168.100.255</div></div>
+<div class="column more no-sort"><div class="icon"></div></div>
+</div>
+<div class="row">
+<div class="column name first sorted">
+<div class="checkbox"></div>
+<div class="label">yiran-idc-installer-29.58</div>
+</div>
+<div class="column second status running"><div class="icon"></div><div class="label">Running</div></div>
+<div class="column third right"><div class="label">1 <span class="text-secondary">Core</span></div></div>
+<div class="column fourth right"><div class="label">1.98%</div></div>
+<div class="column fifth right"><div class="label">512 <span class="text-secondary">MiB</span></div></div>
+<div class="column sixth right"><span class="text-quaternary">-</span></div>
+<div class="column seventh"><div class="label">192.168.100.21</div></div>
+<div class="column more no-sort"><div class="icon"></div></div>
+</div>
+<div class="row">
+<div class="column name first sorted">
+<div class="checkbox"></div>
+<div class="label">bruce-win12</div>
+</div>
+<div class="column second status stopped"><div class="icon"></div><div class="label">Stopped</div></div>
+<div class="column third right"><div class="label">1 <span class="text-secondary">Core</span></div></div>
+<div class="column fourth right"><span class="text-quaternary">-</span></div>
+<div class="column fifth right"><div class="label">512 <span class="text-secondary">MiB</span></div></div>
+<div class="column sixth right"><span class="text-quaternary">-</span></div>
+<div class="column seventh"><span class="text-quaternary">-</span></div>
+<div class="column more no-sort"><div class="icon"></div></div>
+</div>
+<div class="row">
+<div class="column name first sorted">
+<div class="checkbox"></div>
+<div class="label">jiangbo-win10</div>
+</div>
+<div class="column second status running"><div class="icon"></div><div class="label">Running</div></div>
+<div class="column third right"><div class="label">4 <span class="text-secondary">Core</span></div></div>
+<div class="column fourth right"><div class="label">1.98%</div></div>
+<div class="column fifth right"><div class="label">4 <span class="text-secondary">GiB</span></div></div>
+<div class="column sixth right"><span class="text-quaternary">-</span></div>
+<div class="column seventh"><div class="label">192.168.0.82 <span class="text-secondary">还有 1 个</span></div></div>
+<div class="column more no-sort"><div class="icon"></div></div>
+</div>
+<div class="row">
+<div class="column name first sorted">
+<div class="checkbox"></div>
+<div class="label">yiran-win10-24.57</div>
+</div>
+<div class="column second status running"><div class="icon"></div><div class="label">Running</div></div>
+<div class="column third right"><div class="label">2 <span class="text-secondary">Core</span></div></div>
+<div class="column fourth right"><span class="text-quaternary">-</span></div>
+<div class="column fifth right"><div class="label">4 <span class="text-secondary">GiB</span></div></div>
+<div class="column sixth right"><span class="text-quaternary">-</span></div>
+<div class="column seventh"><span class="text-quaternary">-</span></div>
+<div class="column more no-sort"><div class="icon"></div></div>
+</div>
+<div class="row">
+<div class="column name first sorted">
+<div class="checkbox"></div>
+<div class="label">octopus-extension-1d311c9f</div>
+</div>
+<div class="column second status suspended"><div class="icon"></div><div class="label">Suspended</div></div>
+<div class="column third right"><div class="label">2 <span class="text-secondary">Core</span></div></div>
+<div class="column fourth right"><span class="text-quaternary">-</span></div>
+<div class="column fifth right"><div class="label">4 <span class="text-secondary">GiB</span></div></div>
+<div class="column sixth right"><span class="text-quaternary">-</span></div>
+<div class="column seventh"><span class="text-quaternary">-</span></div>
+<div class="column more no-sort"><div class="icon"></div></div>
+</div>
+<div class="row">
+<div class="column name first sorted">
+<div class="checkbox"></div>
+<div class="label">tianren-win7</div>
+</div>
+<div class="column second status stopped"><div class="icon"></div><div class="label">Stopped</div></div>
+<div class="column third right"><div class="label">2 <span class="text-secondary">Core</span></div></div>
+<div class="column fourth right"><span class="text-quaternary">-</span></div>
+<div class="column fifth right"><div class="label">4 <span class="text-secondary">GiB</span></div></div>
+<div class="column sixth right"><span class="text-quaternary">-</span></div>
+<div class="column seventh"><span class="text-quaternary">-</span></div>
+<div class="column more no-sort"><div class="icon"></div></div>
+</div>
+<div class="row">
+<div class="column name first sorted">
+<div class="checkbox"></div>
+<div class="label">fanyang-windev</div>
+</div>
+<div class="column second status unknown"><div class="icon"></div><div class="label">Unknown</div></div>
+<div class="column third right"><div class="label">2 <span class="text-secondary">Core</span></div></div>
+<div class="column fourth right"><span class="text-quaternary">-</span></div>
+<div class="column fifth right"><div class="label">4 <span class="text-secondary">GiB</span></div></div>
+<div class="column sixth right"><span class="text-quaternary">-</span></div>
+<div class="column seventh"><span class="text-quaternary">-</span></div>
+<div class="column more no-sort"><div class="icon"></div></div>
+</div>
+<div class="row">
+<div class="column name first sorted">
+<div class="checkbox"></div>
+<div class="label">gitlab-wechat-notifier</div>
+</div>
+<div class="column second status running"><div class="icon"></div><div class="label">Running</div></div>
+<div class="column third right"><div class="label">12 <span class="text-secondary">Core</span></div></div>
+<div class="column fourth right"><div class="label">1.02%</div></div>
+<div class="column fifth right"><div class="label">8 <span class="text-secondary">GiB</span></div></div>
+<div class="column sixth right"><div class="label">43.2%</div></div>
+<div class="column seventh"><div class="label">192.168.100.73</div></div>
+<div class="column more no-sort"><div class="icon"></div></div>
+</div>
+<div class="row">
+<div class="column name first sorted">
+<div class="checkbox"></div>
+<div class="label">fisheye-gitlab-runner1</div>
+</div>
+<div class="column second status stopped"><div class="icon"></div><div class="label">Stopped</div></div>
+<div class="column third right"><div class="label">8 <span class="text-secondary">Core</span></div></div>
+<div class="column fourth right"><span class="text-quaternary">-</span></div>
+<div class="column fifth right"><div class="label">8 <span class="text-secondary">GiB</span></div></div>
+<div class="column sixth right"><span class="text-quaternary">-</span></div>
+<div class="column seventh"><span class="text-quaternary">-</span></div>
+<div class="column more no-sort"><div class="icon"></div></div>
+</div>
+<div class="row">
+<div class="column name first sorted">
+<div class="checkbox"></div>
+<div class="label">fanyang-dev</div>
+</div>
+<div class="column second status running"><div class="icon"></div><div class="label">Running</div></div>
+<div class="column third right"><div class="label">2 <span class="text-secondary">Core</span></div></div>
+<div class="column fourth right"><div class="label">0.98%</div></div>
+<div class="column fifth right"><div class="label">4 <span class="text-secondary">GiB</span></div></div>
+<div class="column sixth right"><span class="text-quaternary">-</span></div>
+<div class="column seventh"><div class="label"><span class="text-quaternary">-</span></div></div>
+<div class="column more no-sort"><div class="icon"></div></div>
+</div>
+<div class="row">
+<div class="column first name sorted">
+<div class="checkbox"></div>
+<div class="label">yeji-pure-dev</div>
+</div>
+<div class="column second status running"><div class="icon"></div><div class="label">Running</div></div>
+<div class="column third right"><div class="label">4 <span class="text-secondary">Core</span></div></div>
+<div class="column fourth right"><span class="text-quaternary">-</span></div>
+<div class="column fifth right"><div class="label">4 <span class="text-secondary">GiB</span></div></div>
+<div class="column sixth right"><span class="text-quaternary">-</span></div>
+<div class="column seventh"><div class="label">192.168.100.255</div></div>
+<div class="column more no-sort"><div class="icon"></div></div>
+</div>
+<div class="row">
+<div class="column name first sorted">
+<div class="checkbox"></div>
+<div class="label">yiran-idc-installer-29.58</div>
+</div>
+<div class="column second status running"><div class="icon"></div><div class="label">Running</div></div>
+<div class="column third right"><div class="label">1 <span class="text-secondary">Core</span></div></div>
+<div class="column fourth right"><div class="label">1.98%</div></div>
+<div class="column fifth right"><div class="label">512 <span class="text-secondary">MiB</span></div></div>
+<div class="column sixth right"><span class="text-quaternary">-</span></div>
+<div class="column seventh"><div class="label">192.168.100.21</div></div>
+<div class="column more no-sort"><div class="icon"></div></div>
+</div>
+<div class="row">
+<div class="column name first sorted">
+<div class="checkbox"></div>
+<div class="label">bruce-win12</div>
+</div>
+<div class="column second status stopped"><div class="icon"></div><div class="label">Stopped</div></div>
+<div class="column third right"><div class="label">1 <span class="text-secondary">Core</span></div></div>
+<div class="column fourth right"><span class="text-quaternary">-</span></div>
+<div class="column fifth right"><div class="label">512 <span class="text-secondary">MiB</span></div></div>
+<div class="column sixth right"><span class="text-quaternary">-</span></div>
+<div class="column seventh"><span class="text-quaternary">-</span></div>
+<div class="column more no-sort"><div class="icon"></div></div>
+</div>
+<div class="row">
+<div class="column name first sorted">
+<div class="checkbox"></div>
+<div class="label">jiangbo-win10</div>
+</div>
+<div class="column second status running"><div class="icon"></div><div class="label">Running</div></div>
+<div class="column third right"><div class="label">4 <span class="text-secondary">Core</span></div></div>
+<div class="column fourth right"><div class="label">1.98%</div></div>
+<div class="column fifth right"><div class="label">4 <span class="text-secondary">GiB</span></div></div>
+<div class="column sixth right"><span class="text-quaternary">-</span></div>
+<div class="column seventh"><div class="label">192.168.0.82 <span class="text-secondary">还有 1 个</span></div></div>
+<div class="column more no-sort"><div class="icon"></div></div>
+</div>
+<div class="row">
+<div class="column name first sorted">
+<div class="checkbox"></div>
+<div class="label">yiran-win10-24.57</div>
+</div>
+<div class="column second status running"><div class="icon"></div><div class="label">Running</div></div>
+<div class="column third right"><div class="label">2 <span class="text-secondary">Core</span></div></div>
+<div class="column fourth right"><span class="text-quaternary">-</span></div>
+<div class="column fifth right"><div class="label">4 <span class="text-secondary">GiB</span></div></div>
+<div class="column sixth right"><span class="text-quaternary">-</span></div>
+<div class="column seventh"><span class="text-quaternary">-</span></div>
+<div class="column more no-sort"><div class="icon"></div></div>
+</div>
+<div class="row">
+<div class="column name first sorted">
+<div class="checkbox"></div>
+<div class="label">octopus-extension-1d311c9f</div>
+</div>
+<div class="column second status suspended"><div class="icon"></div><div class="label">Suspended</div></div>
+<div class="column third right"><div class="label">2 <span class="text-secondary">Core</span></div></div>
+<div class="column fourth right"><span class="text-quaternary">-</span></div>
+<div class="column fifth right"><div class="label">4 <span class="text-secondary">GiB</span></div></div>
+<div class="column sixth right"><span class="text-quaternary">-</span></div>
+<div class="column seventh"><span class="text-quaternary">-</span></div>
+<div class="column more no-sort"><div class="icon"></div></div>
+</div>
+<div class="row">
+<div class="column name first sorted">
+<div class="checkbox"></div>
+<div class="label">tianren-win7</div>
+</div>
+<div class="column second status stopped"><div class="icon"></div><div class="label">Stopped</div></div>
+<div class="column third right"><div class="label">2 <span class="text-secondary">Core</span></div></div>
+<div class="column fourth right"><span class="text-quaternary">-</span></div>
+<div class="column fifth right"><div class="label">4 <span class="text-secondary">GiB</span></div></div>
+<div class="column sixth right"><span class="text-quaternary">-</span></div>
+<div class="column seventh"><span class="text-quaternary">-</span></div>
+<div class="column more no-sort"><div class="icon"></div></div>
+</div>
+<div class="row">
+<div class="column name first sorted">
+<div class="checkbox"></div>
+<div class="label">fanyang-windev</div>
+</div>
+<div class="column second status unknown"><div class="icon"></div><div class="label">Unknown</div></div>
+<div class="column third right"><div class="label">2 <span class="text-secondary">Core</span></div></div>
+<div class="column fourth right"><span class="text-quaternary">-</span></div>
+<div class="column fifth right"><div class="label">4 <span class="text-secondary">GiB</span></div></div>
+<div class="column sixth right"><span class="text-quaternary">-</span></div>
+<div class="column seventh"><span class="text-quaternary">-</span></div>
+<div class="column more no-sort"><div class="icon"></div></div>
+</div>
+<div class="row">
+<div class="column name first sorted">
+<div class="checkbox"></div>
+<div class="label">gitlab-wechat-notifier</div>
+</div>
+<div class="column second status running"><div class="icon"></div><div class="label">Running</div></div>
+<div class="column third right"><div class="label">12 <span class="text-secondary">Core</span></div></div>
+<div class="column fourth right"><div class="label">1.02%</div></div>
+<div class="column fifth right"><div class="label">8 <span class="text-secondary">GiB</span></div></div>
+<div class="column sixth right"><span class="text-quaternary">-</span></div>
+<div class="column seventh"><div class="label">192.168.100.73</div></div>
+<div class="column more no-sort"><div class="icon"></div></div>
+</div>
+<div class="row">
+<div class="column name first sorted">
+<div class="checkbox"></div>
+<div class="label">fisheye-gitlab-runner1</div>
+</div>
+<div class="column second status stopped"><div class="icon"></div><div class="label">Stopped</div></div>
+<div class="column third right"><div class="label">8 <span class="text-secondary">Core</span></div></div>
+<div class="column fourth right"><span class="text-quaternary">-</span></div>
+<div class="column fifth right"><div class="label">8 <span class="text-secondary">GiB</span></div></div>
+<div class="column sixth right"><span class="text-quaternary">-</span></div>
+<div class="column seventh"><span class="text-quaternary">-</span></div>
+<div class="column more no-sort"><div class="icon"></div></div>
+</div>
+<div class="row">
+<div class="column name first sorted">
+<div class="checkbox"></div>
+<div class="label">fanyang-dev</div>
+</div>
+<div class="column second status running"><div class="icon"></div><div class="label">Running</div></div>
+<div class="column third right"><div class="label">2 <span class="text-secondary">Core</span></div></div>
+<div class="column fourth right"><div class="label">0.98%</div></div>
+<div class="column fifth right"><div class="label">4 <span class="text-secondary">GiB</span></div></div>
+<div class="column sixth right"><span class="text-quaternary">-</span></div>
+<div class="column seventh"><div class="label"><span class="text-quaternary">-</span></div></div>
+<div class="column more no-sort"><div class="icon"></div></div>
+</div>
+<div class="row">
+<div class="column first name sorted">
+<div class="checkbox"></div>
+<div class="label">yeji-pure-dev</div>
+</div>
+<div class="column second status running"><div class="icon"></div><div class="label">Running</div></div>
+<div class="column third right"><div class="label">4 <span class="text-secondary">Core</span></div></div>
+<div class="column fourth right"><span class="text-quaternary">-</span></div>
+<div class="column fifth right"><div class="label">4 <span class="text-secondary">GiB</span></div></div>
+<div class="column sixth right"><span class="text-quaternary">-</span></div>
+<div class="column seventh"><div class="label">192.168.100.255</div></div>
+<div class="column more no-sort"><div class="icon"></div></div>
+</div>
+<div class="row">
+<div class="column name first sorted">
+<div class="checkbox"></div>
+<div class="label">yiran-idc-installer-29.58</div>
+</div>
+<div class="column second status running"><div class="icon"></div><div class="label">Running</div></div>
+<div class="column third right"><div class="label">1 <span class="text-secondary">Core</span></div></div>
+<div class="column fourth right"><div class="label">1.98%</div></div>
+<div class="column fifth right"><div class="label">512 <span class="text-secondary">MiB</span></div></div>
+<div class="column sixth right"><span class="text-quaternary">-</span></div>
+<div class="column seventh"><div class="label">192.168.100.21</div></div>
+<div class="column more no-sort"><div class="icon"></div></div>
+</div>
+<div class="row">
+<div class="column name first sorted">
+<div class="checkbox"></div>
+<div class="label">bruce-win12</div>
+</div>
+<div class="column second status stopped"><div class="icon"></div><div class="label">Stopped</div></div>
+<div class="column third right"><div class="label">1 <span class="text-secondary">Core</span></div></div>
+<div class="column fourth right"><span class="text-quaternary">-</span></div>
+<div class="column fifth right"><div class="label">512 <span class="text-secondary">MiB</span></div></div>
+<div class="column sixth right"><span class="text-quaternary">-</span></div>
+<div class="column seventh"><span class="text-quaternary">-</span></div>
+<div class="column more no-sort"><div class="icon"></div></div>
+</div>
+<div class="row">
+<div class="column name first sorted">
+<div class="checkbox"></div>
+<div class="label">jiangbo-win10</div>
+</div>
+<div class="column second status running"><div class="icon"></div><div class="label">Running</div></div>
+<div class="column third right"><div class="label">4 <span class="text-secondary">Core</span></div></div>
+<div class="column fourth right"><div class="label">1.98%</div></div>
+<div class="column fifth right"><div class="label">4 <span class="text-secondary">GiB</span></div></div>
+<div class="column sixth right"><div class="label">14.5%</div></div>
+<div class="column seventh"><div class="label">192.168.0.82 <span class="text-secondary">还有 1 个</span></div></div>
+<div class="column more no-sort"><div class="icon"></div></div>
+</div>
+<div class="row">
+<div class="column name first sorted">
+<div class="checkbox"></div>
+<div class="label">yiran-win10-24.57</div>
+</div>
+<div class="column second status running"><div class="icon"></div><div class="label">Running</div></div>
+<div class="column third right"><div class="label">2 <span class="text-secondary">Core</span></div></div>
+<div class="column fourth right"><span class="text-quaternary">-</span></div>
+<div class="column fifth right"><div class="label">4 <span class="text-secondary">GiB</span></div></div>
+<div class="column sixth right"><span class="text-quaternary">-</span></div>
+<div class="column seventh"><span class="text-quaternary">-</span></div>
+<div class="column more no-sort"><div class="icon"></div></div>
+</div>
+<div class="row">
+<div class="column name first sorted">
+<div class="checkbox"></div>
+<div class="label">octopus-extension-1d311c9f</div>
+</div>
+<div class="column second status suspended"><div class="icon"></div><div class="label">Suspended</div></div>
+<div class="column third right"><div class="label">2 <span class="text-secondary">Core</span></div></div>
+<div class="column fourth right"><span class="text-quaternary">-</span></div>
+<div class="column fifth right"><div class="label">4 <span class="text-secondary">GiB</span></div></div>
+<div class="column sixth right"><span class="text-quaternary">-</span></div>
+<div class="column seventh"><span class="text-quaternary">-</span></div>
+<div class="column more no-sort"><div class="icon"></div></div>
+</div>
+<div class="row">
+<div class="column name first sorted">
+<div class="checkbox"></div>
+<div class="label">tianren-win7</div>
+</div>
+<div class="column second status stopped"><div class="icon"></div><div class="label">Stopped</div></div>
+<div class="column third right"><div class="label">2 <span class="text-secondary">Core</span></div></div>
+<div class="column fourth right"><span class="text-quaternary">-</span></div>
+<div class="column fifth right"><div class="label">4 <span class="text-secondary">GiB</span></div></div>
+<div class="column sixth right"><span class="text-quaternary">-</span></div>
+<div class="column seventh"><span class="text-quaternary">-</span></div>
+<div class="column more no-sort"><div class="icon"></div></div>
+</div>
+<div class="row">
+<div class="column name first sorted">
+<div class="checkbox"></div>
+<div class="label">fanyang-windev</div>
+</div>
+<div class="column second status unknown"><div class="icon"></div><div class="label">Unknown</div></div>
+<div class="column third right"><div class="label">2 <span class="text-secondary">Core</span></div></div>
+<div class="column fourth right"><span class="text-quaternary">-</span></div>
+<div class="column fifth right"><div class="label">4 <span class="text-secondary">GiB</span></div></div>
+<div class="column sixth right"><span class="text-quaternary">-</span></div>
+<div class="column seventh"><span class="text-quaternary">-</span></div>
+<div class="column more no-sort"><div class="icon"></div></div>
+</div>
+<div class="row">
+<div class="column name first sorted">
+<div class="checkbox"></div>
+<div class="label">gitlab-wechat-notifier</div>
+</div>
+<div class="column second status running"><div class="icon"></div><div class="label">Running</div></div>
+<div class="column third right"><div class="label">12 <span class="text-secondary">Core</span></div></div>
+<div class="column fourth right"><div class="label">1.02%</div></div>
+<div class="column fifth right"><div class="label">8 <span class="text-secondary">GiB</span></div></div>
+<div class="column sixth right"><span class="text-quaternary">-</span></div>
+<div class="column seventh"><div class="label">192.168.100.73</div></div>
+<div class="column more no-sort"><div class="icon"></div></div>
+</div>
+<div class="row">
+<div class="column name first sorted">
+<div class="checkbox"></div>
+<div class="label">fisheye-gitlab-runner1</div>
+</div>
+<div class="column second status stopped"><div class="icon"></div><div class="label">Stopped</div></div>
+<div class="column third right"><div class="label">8 <span class="text-secondary">Core</span></div></div>
+<div class="column fourth right"><span class="text-quaternary">-</span></div>
+<div class="column fifth right"><div class="label">8 <span class="text-secondary">GiB</span></div></div>
+<div class="column sixth right"><span class="text-quaternary">-</span></div>
+<div class="column seventh"><span class="text-quaternary">-</span></div>
+<div class="column more no-sort"><div class="icon"></div></div>
+</div>
+<div class="row">
+<div class="column name first sorted">
+<div class="checkbox"></div>
+<div class="label">fanyang-dev</div>
+</div>
+<div class="column second status running"><div class="icon"></div><div class="label">Running</div></div>
+<div class="column third right"><div class="label">2 <span class="text-secondary">Core</span></div></div>
+<div class="column fourth right"><div class="label">0.98%</div></div>
+<div class="column fifth right"><div class="label">4 <span class="text-secondary">GiB</span></div></div>
+<div class="column sixth right"><span class="text-quaternary">-</span></div>
+<div class="column seventh"><div class="label"><span class="text-quaternary">-</span></div></div>
+<div class="column more no-sort"><div class="icon"></div></div>
+</div>
+<div class="row">
+<div class="column first name sorted">
+<div class="checkbox"></div>
+<div class="label">yeji-pure-dev</div>
+</div>
+<div class="column second status running"><div class="icon"></div><div class="label">Running</div></div>
+<div class="column third right"><div class="label">4 <span class="text-secondary">Core</span></div></div>
+<div class="column fourth right"><span class="text-quaternary">-</span></div>
+<div class="column fifth right"><div class="label">4 <span class="text-secondary">GiB</span></div></div>
+<div class="column sixth right"><span class="text-quaternary">-</span></div>
+<div class="column seventh"><div class="label">192.168.100.255</div></div>
+<div class="column more no-sort"><div class="icon"></div></div>
+</div>
+<div class="row">
+<div class="column name first sorted">
+<div class="checkbox"></div>
+<div class="label">yiran-idc-installer-29.58</div>
+</div>
+<div class="column second status running"><div class="icon"></div><div class="label">Running</div></div>
+<div class="column third right"><div class="label">1 <span class="text-secondary">Core</span></div></div>
+<div class="column fourth right"><div class="label">1.98%</div></div>
+<div class="column fifth right"><div class="label">512 <span class="text-secondary">MiB</span></div></div>
+<div class="column sixth right"><span class="text-quaternary">-</span></div>
+<div class="column seventh"><div class="label">192.168.100.21</div></div>
+<div class="column more no-sort"><div class="icon"></div></div>
+</div>
+<div class="row">
+<div class="column name first sorted">
+<div class="checkbox"></div>
+<div class="label">bruce-win12</div>
+</div>
+<div class="column second status stopped"><div class="icon"></div><div class="label">Stopped</div></div>
+<div class="column third right"><div class="label">1 <span class="text-secondary">Core</span></div></div>
+<div class="column fourth right"><span class="text-quaternary">-</span></div>
+<div class="column fifth right"><div class="label">512 <span class="text-secondary">MiB</span></div></div>
+<div class="column sixth right"><span class="text-quaternary">-</span></div>
+<div class="column seventh"><span class="text-quaternary">-</span></div>
+<div class="column more no-sort"><div class="icon"></div></div>
+</div>
+<div class="row">
+<div class="column name first sorted">
+<div class="checkbox"></div>
+<div class="label">jiangbo-win10</div>
+</div>
+<div class="column second status running"><div class="icon"></div><div class="label">Running</div></div>
+<div class="column third right"><div class="label">4 <span class="text-secondary">Core</span></div></div>
+<div class="column fourth right"><div class="label">1.98%</div></div>
+<div class="column fifth right"><div class="label">4 <span class="text-secondary">GiB</span></div></div>
+<div class="column sixth right"><div class="label">68%</div></div>
+<div class="column seventh"><div class="label">192.168.0.82 <span class="text-secondary">还有 1 个</span></div></div>
+<div class="column more no-sort"><div class="icon"></div></div>
+</div>
+<div class="row">
+<div class="column name first sorted">
+<div class="checkbox"></div>
+<div class="label">yiran-win10-24.57</div>
+</div>
+<div class="column second status running"><div class="icon"></div><div class="label">Running</div></div>
+<div class="column third right"><div class="label">2 <span class="text-secondary">Core</span></div></div>
+<div class="column fourth right"><span class="text-quaternary">-</span></div>
+<div class="column fifth right"><div class="label">4 <span class="text-secondary">GiB</span></div></div>
+<div class="column sixth right"><span class="text-quaternary">-</span></div>
+<div class="column seventh"><span class="text-quaternary">-</span></div>
+<div class="column more no-sort"><div class="icon"></div></div>
+</div>
+<div class="row">
+<div class="column name first sorted">
+<div class="checkbox"></div>
+<div class="label">octopus-extension-1d311c9f</div>
+</div>
+<div class="column second status suspended"><div class="icon"></div><div class="label">Suspended</div></div>
+<div class="column third right"><div class="label">2 <span class="text-secondary">Core</span></div></div>
+<div class="column fourth right"><span class="text-quaternary">-</span></div>
+<div class="column fifth right"><div class="label">4 <span class="text-secondary">GiB</span></div></div>
+<div class="column sixth right"><div class="label">10.72%</div></div>
+<div class="column seventh"><span class="text-quaternary">-</span></div>
+<div class="column more no-sort"><div class="icon"></div></div>
+</div>
+</div>
+<div class="tfoot"></div>
+</div>
+<div class="pagenation">
+<div class="page-switcher">
+<div class="label">Showing 1 – 50 of 348 Items</div>
+<div class="icon"></div>
+</div>
+<div class="page-previous-next">
+<div class="page-next">Next 50 Items</div>
+<div class="icon"></div>
+</div>
+</div>
+<footer>
+</footer>
+</div>
+</main>
+<footer></footer>
+</div>
+<div id="modal-immersive-dialog" class="modal hide">
+<div class="immersive-dialog">
+<div class="close-btn" onclick="closeImmersiveDialogBox();"></div>
+<div class="header">
+<div class="box">
+<div class="large-title truncate">Create Virtual Machine</div>
+</div>
+</div>
+<div class="form">
+<div class="step-indicator"></div>
+<div class="selected-summary"></div>
+</div>
+</div>
+</div>
+<div class="modal hide">
+<div class="dialog"></div>
+</div>
+<div id="dim" class="dim hide"></div>
+<script src="./js/script.js"></script>
+</body>
+</html>

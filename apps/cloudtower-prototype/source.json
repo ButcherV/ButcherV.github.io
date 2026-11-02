@@ -1,0 +1,417 @@
+{
+  "source": "https://www.lujiawei.com/cloudtower-ui-demo/",
+  "changes": [
+    "Removed original site analytics; original prototype HTML, CSS, scripts and assets preserved.",
+    "Resolved the original broken style/style/img/gaussian_opaque.png reference using the source asset from style/img/gaussian_opaque.png."
+  ],
+  "assets": [
+    {
+      "source": "https://www.lujiawei.com/cloudtower-ui-demo/js/noframework.waypoints.min.js",
+      "local": "js/noframework.waypoints.min.js"
+    },
+    {
+      "source": "https://www.lujiawei.com/cloudtower-ui-demo/js/script.js",
+      "local": "js/script.js"
+    },
+    {
+      "source": "https://www.lujiawei.com/cloudtower-ui-demo/style/font/inter/inter.css",
+      "local": "style/font/inter/inter.css"
+    },
+    {
+      "source": "https://www.lujiawei.com/cloudtower-ui-demo/style/img/cloudtower_logo_header.png",
+      "local": "style/img/cloudtower_logo_header.png"
+    },
+    {
+      "source": "https://www.lujiawei.com/cloudtower-ui-demo/style/style.css",
+      "local": "style/style.css"
+    },
+    {
+      "source": "https://www.lujiawei.com/cloudtower-ui-demo/style/var.css",
+      "local": "style/var.css"
+    },
+    {
+      "source": "https://www.lujiawei.com/cloudtower-ui-demo/style/font/inter/Inter-Black.woff2?v=3.15",
+      "local": "style/font/inter/Inter-Black.woff2"
+    },
+    {
+      "source": "https://www.lujiawei.com/cloudtower-ui-demo/style/font/inter/Inter-Black.woff?v=3.15",
+      "local": "style/font/inter/Inter-Black.woff"
+    },
+    {
+      "source": "https://www.lujiawei.com/cloudtower-ui-demo/style/font/inter/Inter-BlackItalic.woff2?v=3.15",
+      "local": "style/font/inter/Inter-BlackItalic.woff2"
+    },
+    {
+      "source": "https://www.lujiawei.com/cloudtower-ui-demo/style/font/inter/Inter-BlackItalic.woff?v=3.15",
+      "local": "style/font/inter/Inter-BlackItalic.woff"
+    },
+    {
+      "source": "https://www.lujiawei.com/cloudtower-ui-demo/style/font/inter/Inter-Bold.woff2?v=3.15",
+      "local": "style/font/inter/Inter-Bold.woff2"
+    },
+    {
+      "source": "https://www.lujiawei.com/cloudtower-ui-demo/style/font/inter/Inter-Bold.woff?v=3.15",
+      "local": "style/font/inter/Inter-Bold.woff"
+    },
+    {
+      "source": "https://www.lujiawei.com/cloudtower-ui-demo/style/font/inter/Inter-BoldItalic.woff2?v=3.15",
+      "local": "style/font/inter/Inter-BoldItalic.woff2"
+    },
+    {
+      "source": "https://www.lujiawei.com/cloudtower-ui-demo/style/font/inter/Inter-BoldItalic.woff?v=3.15",
+      "local": "style/font/inter/Inter-BoldItalic.woff"
+    },
+    {
+      "source": "https://www.lujiawei.com/cloudtower-ui-demo/style/font/inter/Inter-ExtraBold.woff2?v=3.15",
+      "local": "style/font/inter/Inter-ExtraBold.woff2"
+    },
+    {
+      "source": "https://www.lujiawei.com/cloudtower-ui-demo/style/font/inter/Inter-ExtraBold.woff?v=3.15",
+      "local": "style/font/inter/Inter-ExtraBold.woff"
+    },
+    {
+      "source": "https://www.lujiawei.com/cloudtower-ui-demo/style/font/inter/Inter-ExtraBoldItalic.woff2?v=3.15",
+      "local": "style/font/inter/Inter-ExtraBoldItalic.woff2"
+    },
+    {
+      "source": "https://www.lujiawei.com/cloudtower-ui-demo/style/font/inter/Inter-ExtraBoldItalic.woff?v=3.15",
+      "local": "style/font/inter/Inter-ExtraBoldItalic.woff"
+    },
+    {
+      "source": "https://www.lujiawei.com/cloudtower-ui-demo/style/font/inter/Inter-ExtraLight.woff2?v=3.15",
+      "local": "style/font/inter/Inter-ExtraLight.woff2"
+    },
+    {
+      "source": "https://www.lujiawei.com/cloudtower-ui-demo/style/font/inter/Inter-ExtraLight.woff?v=3.15",
+      "local": "style/font/inter/Inter-ExtraLight.woff"
+    },
+    {
+      "source": "https://www.lujiawei.com/cloudtower-ui-demo/style/font/inter/Inter-ExtraLightItalic.woff2?v=3.15",
+      "local": "style/font/inter/Inter-ExtraLightItalic.woff2"
+    },
+    {
+      "source": "https://www.lujiawei.com/cloudtower-ui-demo/style/font/inter/Inter-ExtraLightItalic.woff?v=3.15",
+      "local": "style/font/inter/Inter-ExtraLightItalic.woff"
+    },
+    {
+      "source": "https://www.lujiawei.com/cloudtower-ui-demo/style/font/inter/Inter-Italic.woff2?v=3.15",
+      "local": "style/font/inter/Inter-Italic.woff2"
+    },
+    {
+      "source": "https://www.lujiawei.com/cloudtower-ui-demo/style/font/inter/Inter-Italic.woff?v=3.15",
+      "local": "style/font/inter/Inter-Italic.woff"
+    },
+    {
+      "source": "https://www.lujiawei.com/cloudtower-ui-demo/style/font/inter/Inter-Light.woff2?v=3.15",
+      "local": "style/font/inter/Inter-Light.woff2"
+    },
+    {
+      "source": "https://www.lujiawei.com/cloudtower-ui-demo/style/font/inter/Inter-Light.woff?v=3.15",
+      "local": "style/font/inter/Inter-Light.woff"
+    },
+    {
+      "source": "https://www.lujiawei.com/cloudtower-ui-demo/style/font/inter/Inter-LightItalic.woff2?v=3.15",
+      "local": "style/font/inter/Inter-LightItalic.woff2"
+    },
+    {
+      "source": "https://www.lujiawei.com/cloudtower-ui-demo/style/font/inter/Inter-LightItalic.woff?v=3.15",
+      "local": "style/font/inter/Inter-LightItalic.woff"
+    },
+    {
+      "source": "https://www.lujiawei.com/cloudtower-ui-demo/style/font/inter/Inter-Medium.woff2?v=3.15",
+      "local": "style/font/inter/Inter-Medium.woff2"
+    },
+    {
+      "source": "https://www.lujiawei.com/cloudtower-ui-demo/style/font/inter/Inter-Medium.woff?v=3.15",
+      "local": "style/font/inter/Inter-Medium.woff"
+    },
+    {
+      "source": "https://www.lujiawei.com/cloudtower-ui-demo/style/font/inter/Inter-MediumItalic.woff2?v=3.15",
+      "local": "style/font/inter/Inter-MediumItalic.woff2"
+    },
+    {
+      "source": "https://www.lujiawei.com/cloudtower-ui-demo/style/font/inter/Inter-MediumItalic.woff?v=3.15",
+      "local": "style/font/inter/Inter-MediumItalic.woff"
+    },
+    {
+      "source": "https://www.lujiawei.com/cloudtower-ui-demo/style/font/inter/Inter-Regular.woff2?v=3.15",
+      "local": "style/font/inter/Inter-Regular.woff2"
+    },
+    {
+      "source": "https://www.lujiawei.com/cloudtower-ui-demo/style/font/inter/Inter-Regular.woff?v=3.15",
+      "local": "style/font/inter/Inter-Regular.woff"
+    },
+    {
+      "source": "https://www.lujiawei.com/cloudtower-ui-demo/style/font/inter/Inter-SemiBold.woff2?v=3.15",
+      "local": "style/font/inter/Inter-SemiBold.woff2"
+    },
+    {
+      "source": "https://www.lujiawei.com/cloudtower-ui-demo/style/font/inter/Inter-SemiBold.woff?v=3.15",
+      "local": "style/font/inter/Inter-SemiBold.woff"
+    },
+    {
+      "source": "https://www.lujiawei.com/cloudtower-ui-demo/style/font/inter/Inter-SemiBoldItalic.woff2?v=3.15",
+      "local": "style/font/inter/Inter-SemiBoldItalic.woff2"
+    },
+    {
+      "source": "https://www.lujiawei.com/cloudtower-ui-demo/style/font/inter/Inter-SemiBoldItalic.woff?v=3.15",
+      "local": "style/font/inter/Inter-SemiBoldItalic.woff"
+    },
+    {
+      "source": "https://www.lujiawei.com/cloudtower-ui-demo/style/font/inter/Inter-Thin.woff2?v=3.15",
+      "local": "style/font/inter/Inter-Thin.woff2"
+    },
+    {
+      "source": "https://www.lujiawei.com/cloudtower-ui-demo/style/font/inter/Inter-Thin.woff?v=3.15",
+      "local": "style/font/inter/Inter-Thin.woff"
+    },
+    {
+      "source": "https://www.lujiawei.com/cloudtower-ui-demo/style/font/inter/Inter-ThinItalic.woff2?v=3.15",
+      "local": "style/font/inter/Inter-ThinItalic.woff2"
+    },
+    {
+      "source": "https://www.lujiawei.com/cloudtower-ui-demo/style/font/inter/Inter-ThinItalic.woff?v=3.15",
+      "local": "style/font/inter/Inter-ThinItalic.woff"
+    },
+    {
+      "source": "https://www.lujiawei.com/cloudtower-ui-demo/style/font/inter/Inter-italic.var.woff2?v=3.15",
+      "local": "style/font/inter/Inter-italic.var.woff2"
+    },
+    {
+      "source": "https://www.lujiawei.com/cloudtower-ui-demo/style/font/inter/Inter-roman.var.woff2?v=3.15",
+      "local": "style/font/inter/Inter-roman.var.woff2"
+    },
+    {
+      "source": "https://www.lujiawei.com/cloudtower-ui-demo/style/font/inter/Inter.var.woff2?v=3.15",
+      "local": "style/font/inter/Inter.var.woff2"
+    },
+    {
+      "source": "https://www.lujiawei.com/cloudtower-ui-demo/style/icon/16/arrow/chevron.down.small/secondary.svg",
+      "local": "style/icon/16/arrow/chevron.down.small/secondary.svg"
+    },
+    {
+      "source": "https://www.lujiawei.com/cloudtower-ui-demo/style/icon/16/arrow/chevron.down/bold.blue.svg",
+      "local": "style/icon/16/arrow/chevron.down/bold.blue.svg"
+    },
+    {
+      "source": "https://www.lujiawei.com/cloudtower-ui-demo/style/icon/16/arrow/chevron.down/bold.ontint.svg",
+      "local": "style/icon/16/arrow/chevron.down/bold.ontint.svg"
+    },
+    {
+      "source": "https://www.lujiawei.com/cloudtower-ui-demo/style/icon/16/arrow/chevron.down/bold.secondary.svg",
+      "local": "style/icon/16/arrow/chevron.down/bold.secondary.svg"
+    },
+    {
+      "source": "https://www.lujiawei.com/cloudtower-ui-demo/style/icon/16/arrow/chevron.down/bold.super.svg",
+      "local": "style/icon/16/arrow/chevron.down/bold.super.svg"
+    },
+    {
+      "source": "https://www.lujiawei.com/cloudtower-ui-demo/style/icon/16/arrow/chevron.right.small/bold.blue.svg",
+      "local": "style/icon/16/arrow/chevron.right.small/bold.blue.svg"
+    },
+    {
+      "source": "https://www.lujiawei.com/cloudtower-ui-demo/style/icon/16/arrow/chevron.up.small/bold.secondary.svg",
+      "local": "style/icon/16/arrow/chevron.up.small/bold.secondary.svg"
+    },
+    {
+      "source": "https://www.lujiawei.com/cloudtower-ui-demo/style/icon/16/cluster/gradient-blue.svg",
+      "local": "style/icon/16/cluster/gradient-blue.svg"
+    },
+    {
+      "source": "https://www.lujiawei.com/cloudtower-ui-demo/style/icon/16/cluster/ontint.svg",
+      "local": "style/icon/16/cluster/ontint.svg"
+    },
+    {
+      "source": "https://www.lujiawei.com/cloudtower-ui-demo/style/icon/16/datacenter/gradient-blue.svg",
+      "local": "style/icon/16/datacenter/gradient-blue.svg"
+    },
+    {
+      "source": "https://www.lujiawei.com/cloudtower-ui-demo/style/icon/16/datacenter/ontint.svg",
+      "local": "style/icon/16/datacenter/ontint.svg"
+    },
+    {
+      "source": "https://www.lujiawei.com/cloudtower-ui-demo/style/icon/16/hierarchy.triangle/blue.svg",
+      "local": "style/icon/16/hierarchy.triangle/blue.svg"
+    },
+    {
+      "source": "https://www.lujiawei.com/cloudtower-ui-demo/style/icon/16/hierarchy.triangle/gray.svg",
+      "local": "style/icon/16/hierarchy.triangle/gray.svg"
+    },
+    {
+      "source": "https://www.lujiawei.com/cloudtower-ui-demo/style/icon/16/hierarchy.triangle/ontint.svg",
+      "local": "style/icon/16/hierarchy.triangle/ontint.svg"
+    },
+    {
+      "source": "https://www.lujiawei.com/cloudtower-ui-demo/style/icon/16/hierarchy.triangle/quaternary.svg",
+      "local": "style/icon/16/hierarchy.triangle/quaternary.svg"
+    },
+    {
+      "source": "https://www.lujiawei.com/cloudtower-ui-demo/style/icon/16/host/gradient-blue.svg",
+      "local": "style/icon/16/host/gradient-blue.svg"
+    },
+    {
+      "source": "https://www.lujiawei.com/cloudtower-ui-demo/style/icon/16/host/ontint.svg",
+      "local": "style/icon/16/host/ontint.svg"
+    },
+    {
+      "source": "https://www.lujiawei.com/cloudtower-ui-demo/style/icon/16/loading/gradient-blue.png",
+      "local": "style/icon/16/loading/gradient-blue.png"
+    },
+    {
+      "source": "https://www.lujiawei.com/cloudtower-ui-demo/style/icon/16/loading/ontint.png",
+      "local": "style/icon/16/loading/ontint.png"
+    },
+    {
+      "source": "https://www.lujiawei.com/cloudtower-ui-demo/style/icon/16/more.ellipsis.3/bold.blue.svg",
+      "local": "style/icon/16/more.ellipsis.3/bold.blue.svg"
+    },
+    {
+      "source": "https://www.lujiawei.com/cloudtower-ui-demo/style/icon/16/plus.add.create.new/bold.blue.svg",
+      "local": "style/icon/16/plus.add.create.new/bold.blue.svg"
+    },
+    {
+      "source": "https://www.lujiawei.com/cloudtower-ui-demo/style/icon/16/plus.add.create.new/bold.ontint.svg",
+      "local": "style/icon/16/plus.add.create.new/bold.ontint.svg"
+    },
+    {
+      "source": "https://www.lujiawei.com/cloudtower-ui-demo/style/icon/16/search/bold.gradient-blue.svg",
+      "local": "style/icon/16/search/bold.gradient-blue.svg"
+    },
+    {
+      "source": "https://www.lujiawei.com/cloudtower-ui-demo/style/icon/16/search/bold.gradient-gray.svg",
+      "local": "style/icon/16/search/bold.gradient-gray.svg"
+    },
+    {
+      "source": "https://www.lujiawei.com/cloudtower-ui-demo/style/icon/16/settings.gear/gradient-blue.svg",
+      "local": "style/icon/16/settings.gear/gradient-blue.svg"
+    },
+    {
+      "source": "https://www.lujiawei.com/cloudtower-ui-demo/style/icon/16/settings.gear/gradient-gray.svg",
+      "local": "style/icon/16/settings.gear/gradient-gray.svg"
+    },
+    {
+      "source": "https://www.lujiawei.com/cloudtower-ui-demo/style/icon/16/status/running.triangle/gradient-green.svg",
+      "local": "style/icon/16/status/running.triangle/gradient-green.svg"
+    },
+    {
+      "source": "https://www.lujiawei.com/cloudtower-ui-demo/style/icon/16/status/stopped.poweredoff.shutdown.square/gray.svg",
+      "local": "style/icon/16/status/stopped.poweredoff.shutdown.square/gray.svg"
+    },
+    {
+      "source": "https://www.lujiawei.com/cloudtower-ui-demo/style/icon/16/status/suspended.paused/gradient-yellow.svg",
+      "local": "style/icon/16/status/suspended.paused/gradient-yellow.svg"
+    },
+    {
+      "source": "https://www.lujiawei.com/cloudtower-ui-demo/style/icon/16/status/unknown.questionmark/red.svg",
+      "local": "style/icon/16/status/unknown.questionmark/red.svg"
+    },
+    {
+      "source": "https://www.lujiawei.com/cloudtower-ui-demo/style/icon/16/vmgroup.folder.not.grouped/gradient-blue.svg",
+      "local": "style/icon/16/vmgroup.folder.not.grouped/gradient-blue.svg"
+    },
+    {
+      "source": "https://www.lujiawei.com/cloudtower-ui-demo/style/icon/16/vmgroup.folder.not.grouped/ontint.svg",
+      "local": "style/icon/16/vmgroup.folder.not.grouped/ontint.svg"
+    },
+    {
+      "source": "https://www.lujiawei.com/cloudtower-ui-demo/style/icon/16/vmgroup.folder/gradient-blue.svg",
+      "local": "style/icon/16/vmgroup.folder/gradient-blue.svg"
+    },
+    {
+      "source": "https://www.lujiawei.com/cloudtower-ui-demo/style/icon/16/vmgroup.folder/ontint.svg",
+      "local": "style/icon/16/vmgroup.folder/ontint.svg"
+    },
+    {
+      "source": "https://www.lujiawei.com/cloudtower-ui-demo/style/icon/24/alert.bell.fill/gradient-blue.svg",
+      "local": "style/icon/24/alert.bell.fill/gradient-blue.svg"
+    },
+    {
+      "source": "https://www.lujiawei.com/cloudtower-ui-demo/style/icon/24/alert.bell.fill/gradient-gray.svg",
+      "local": "style/icon/24/alert.bell.fill/gradient-gray.svg"
+    },
+    {
+      "source": "https://www.lujiawei.com/cloudtower-ui-demo/style/icon/24/alert.bell/gradient-blue.svg",
+      "local": "style/icon/24/alert.bell/gradient-blue.svg"
+    },
+    {
+      "source": "https://www.lujiawei.com/cloudtower-ui-demo/style/icon/24/cluster/gradient-blue.svg",
+      "local": "style/icon/24/cluster/gradient-blue.svg"
+    },
+    {
+      "source": "https://www.lujiawei.com/cloudtower-ui-demo/style/icon/24/create.vmtemplate.add.plus/gradient-blue.svg",
+      "local": "style/icon/24/create.vmtemplate.add.plus/gradient-blue.svg"
+    },
+    {
+      "source": "https://www.lujiawei.com/cloudtower-ui-demo/style/icon/24/datacenter/gradient-blue.svg",
+      "local": "style/icon/24/datacenter/gradient-blue.svg"
+    },
+    {
+      "source": "https://www.lujiawei.com/cloudtower-ui-demo/style/icon/24/export/bold.blue.svg",
+      "local": "style/icon/24/export/bold.blue.svg"
+    },
+    {
+      "source": "https://www.lujiawei.com/cloudtower-ui-demo/style/icon/24/iso.image.disc/gradient-blue.svg",
+      "local": "style/icon/24/iso.image.disc/gradient-blue.svg"
+    },
+    {
+      "source": "https://www.lujiawei.com/cloudtower-ui-demo/style/icon/24/monitoring/gradient-blue.svg",
+      "local": "style/icon/24/monitoring/gradient-blue.svg"
+    },
+    {
+      "source": "https://www.lujiawei.com/cloudtower-ui-demo/style/icon/24/more.ellipsis.3/bold.blue.svg",
+      "local": "style/icon/24/more.ellipsis.3/bold.blue.svg"
+    },
+    {
+      "source": "https://www.lujiawei.com/cloudtower-ui-demo/style/icon/24/more.ellipsis.3/bold.secondary.svg",
+      "local": "style/icon/24/more.ellipsis.3/bold.secondary.svg"
+    },
+    {
+      "source": "https://www.lujiawei.com/cloudtower-ui-demo/style/icon/24/organization/gradient-blue.svg",
+      "local": "style/icon/24/organization/gradient-blue.svg"
+    },
+    {
+      "source": "https://www.lujiawei.com/cloudtower-ui-demo/style/icon/24/organization/ontint.svg",
+      "local": "style/icon/24/organization/ontint.svg"
+    },
+    {
+      "source": "https://www.lujiawei.com/cloudtower-ui-demo/style/icon/24/report.form/gradient-blue.svg",
+      "local": "style/icon/24/report.form/gradient-blue.svg"
+    },
+    {
+      "source": "https://www.lujiawei.com/cloudtower-ui-demo/style/icon/24/resource.optimization/gradient-blue.svg",
+      "local": "style/icon/24/resource.optimization/gradient-blue.svg"
+    },
+    {
+      "source": "https://www.lujiawei.com/cloudtower-ui-demo/style/icon/24/settings.gear/gradient-blue.svg",
+      "local": "style/icon/24/settings.gear/gradient-blue.svg"
+    },
+    {
+      "source": "https://www.lujiawei.com/cloudtower-ui-demo/style/icon/24/task.center.fill/gradient-blue.svg",
+      "local": "style/icon/24/task.center.fill/gradient-blue.svg"
+    },
+    {
+      "source": "https://www.lujiawei.com/cloudtower-ui-demo/style/icon/24/task.center.fill/gradient-gray.svg",
+      "local": "style/icon/24/task.center.fill/gradient-gray.svg"
+    },
+    {
+      "source": "https://www.lujiawei.com/cloudtower-ui-demo/style/icon/24/task.center/gradient-blue.svg",
+      "local": "style/icon/24/task.center/gradient-blue.svg"
+    },
+    {
+      "source": "https://www.lujiawei.com/cloudtower-ui-demo/style/icon/24/vm/gradient-blue.svg",
+      "local": "style/icon/24/vm/gradient-blue.svg"
+    },
+    {
+      "source": "https://www.lujiawei.com/cloudtower-ui-demo/style/icon/24/xmark.close/bold.ontint.svg",
+      "local": "style/icon/24/xmark.close/bold.ontint.svg"
+    },
+    {
+      "source": "https://www.lujiawei.com/cloudtower-ui-demo/style/icon/24/xmark.close/bold.secondary.svg",
+      "local": "style/icon/24/xmark.close/bold.secondary.svg"
+    },
+    {
+      "source": "https://www.lujiawei.com/cloudtower-ui-demo/style/style/img/gaussian_opaque.png",
+      "local": "style/style/img/gaussian_opaque.png"
+    }
+  ]
+}

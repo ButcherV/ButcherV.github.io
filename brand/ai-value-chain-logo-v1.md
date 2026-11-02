@@ -1,0 +1,7 @@
+# AI Value Chain logo concept v1
+
+Generated with the built-in image_gen tool. Transparent PNG concept for review; not yet wired into the application.
+
+## Prompt
+
+Use case: logo-brand. Create ONE finished, distinctive symbol-only logo for an independent research project named AI Value Chain (Chinese name AI 产业图谱). It maps the five-layer AI industry, energy -> chips -> infrastructure -> models -> applications, through the journey of a token. Brand: thoughtful, editorial, precise, understated, personal research tool. Design a highly legible flat geometric mark: five substantial parallel stepped bands form one compact, coherent ascending architectural silhouette, with a clear continuous negative-space passage threading diagonally through them and one small solid square token at the passage's upper exit. The five bands must remain individually countable but together feel like one original designed symbol. Refined optical spacing, strong silhouette, restrained asymmetry, generous breathing room, clear at favicon size. Solid dark warm charcoal main shape, a single muted vermilion square token accent (#b34d40), no other colors. Strictly 2D crisp vector-like shapes and clean edges. One centered mark only, with transparent background, no square app tile, no border, no text, no letters, no caption, no mockup, no shading, no glow, no gradients, no 3D, no circuit brain, no sparkles, no generic network diagram. Composition: symbol occupies roughly 65 percent of square image, entire mark visible.

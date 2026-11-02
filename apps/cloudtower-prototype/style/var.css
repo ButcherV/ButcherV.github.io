@@ -1,0 +1,83 @@
+/* Color */
+
+:root {
+    --header-bg-color: var(--fill-white);
+    --bg-primary: #FFFFFF;
+    --bg-grouped: #EDF0F7;
+    --bg-contrast: #FFFFFF url('./style/img/gaussian_opaque.png') 32px 32px repeat fixed;
+    --bg-body: #000000;
+    --bg-dim-under-dialog-box: rgba(16, 26, 41, 0.4);
+    --main-menu-hover-bg: rgba(255, 255, 255, 0.6);
+    --main-menu-activated-bg: linear-gradient(90deg, #FFFFFF 0%, rgba(255, 255, 255, 0.6) 100%);
+    --text-primary: #00122E;
+    --text-secondary: rgba(44, 56, 82, 0.6);
+    --text-tertiary: rgba(0, 21, 64, 0.3);
+    --text-quaternary: rgba(3, 30, 79, 0.18);
+    --text-ontint: #FFFFFF;
+    --text-super: #1D326C;
+    --link-primary: var(--blue-60);
+    --strokes-trans-1: rgba(225, 230, 241, 0.6);
+    --strokes-trans-2: rgba(211, 218, 235, 0.6);
+    --strokes-white: #FFFFFF;
+    --fill-trans-1: rgba(237, 241, 250, 0.6);
+    --fill-trans-2: rgba(225, 230, 241, 0.6);
+    --fill-trans-3: rgba(211, 218, 235, 0.6);
+    --fill-trans-5: rgba(172, 186, 211, 0.6);
+    --fill-opaque-5: #CCD4E3;
+    --fill-white: #FFFFFF;
+    --blue-80: #005ED1;
+    --blue-60: #0080FF;
+    --blue-40: #009DFF;
+    --green-60: #00BA5D;
+    --green-40: #23CF6D;
+    --gradient-blue-2: linear-gradient(90deg, #0080FF 0%, #005ED1 100%);
+    --topo-level-hover-shadow: 0px 0px 4px rgba(235, 239, 245, 0.6), 0px 8px 16px rgba(129, 138, 153, 0.18);
+    --header-btn-hover-shadow: 0px 0px 4px -2px rgba(10, 37, 85, 0.18), 0px 8px 16px rgba(10, 37, 85, 0.18);
+    --search-box-shadow: 0px 0px 4px -2px rgba(10, 37, 85, 0.18), 0px 6px 16px rgba(10, 37, 85, 0.18);
+}
+
+/* Value */
+
+:root {
+    --header-height: 48px;
+    --header-after-height: 2px;
+    --nav-width: 256px;
+    --nav-after-height: 2px;
+}
+
+/* Keyframes */
+
+@keyframes rotate {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+@keyframes show {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes hide {
+  from { opacity: 1; }
+  to { opacity: 0; }
+}
+
+@keyframes openImmersiveModal {
+  from { transform: translateY(100%); }
+  to { transform: translateY(0); }
+}
+
+@keyframes sink {
+  from { transform: translateY(0)scale(1); border-radius: 0; }
+  to { transform: translateY(5%)scale(0.99); border-radius: 16px 16px 0 0; }
+}
+
+@keyframes openBorderRadius {
+    from { border-radius: 16px 16px 0 0; }
+    to { border-radius: 0; }
+}
+
+@keyframes sinkBorderRadius {
+    from { border-radius: 0; }
+    to { border-radius: 10px 10px 0 0; }
+}

@@ -1,0 +1,126 @@
+{
+  "generatedAt": "2026-09-25T05:14:17.207Z",
+  "startedAt": "2026-09-25T05:14:15.789Z",
+  "model": "jev-latest",
+  "total": 3,
+  "inputTokens": 0,
+  "results": [
+    {
+      "productId": "liquid-context",
+      "productName": "Liquid Context",
+      "companyName": "Liquid AI",
+      "website": "https://www.liquid.ai/blog/liquid-context-qualcomm",
+      "current": [
+        {
+          "layerId": "applications",
+          "categoryId": "applications.applicationDevelopment",
+          "directionIds": [
+            "agentContextMemory"
+          ]
+        }
+      ],
+      "suggested": {
+        "layerId": "",
+        "categoryId": "",
+        "directionId": ""
+      },
+      "confidence": {
+        "layer": 0,
+        "category": 0,
+        "direction": null,
+        "overall": 0
+      },
+      "probabilities": {
+        "layer": {},
+        "category": {},
+        "direction": {}
+      },
+      "qualificationProbability": 0,
+      "evidenceScore": 0,
+      "evidenceConfidence": 0,
+      "recommendedAction": "接口失败",
+      "mismatch": "巡检请求未完成",
+      "model": "jev-latest",
+      "inputTokens": 0,
+      "error": "Jev 401: {\"detail\":{\"error_type\":\"authentication_error\",\"message\":\"Cannot authenticate with the server. Please check your API key and try again.\"}}"
+    },
+    {
+      "productId": "meta-muse-secure-vm",
+      "productName": "Muse 安全虚拟机",
+      "companyName": "Meta",
+      "website": "https://about.fb.com/news/2026/09/introducing-muse-personal-ai-agent/",
+      "current": [
+        {
+          "layerId": "infrastructure",
+          "categoryId": "infrastructure.isolatedRuntimes",
+          "directionIds": [
+            "agentCodeSandboxes"
+          ]
+        }
+      ],
+      "suggested": {
+        "layerId": "",
+        "categoryId": "",
+        "directionId": ""
+      },
+      "confidence": {
+        "layer": 0,
+        "category": 0,
+        "direction": null,
+        "overall": 0
+      },
+      "probabilities": {
+        "layer": {},
+        "category": {},
+        "direction": {}
+      },
+      "qualificationProbability": 0,
+      "evidenceScore": 0,
+      "evidenceConfidence": 0,
+      "recommendedAction": "接口失败",
+      "mismatch": "巡检请求未完成",
+      "model": "jev-latest",
+      "inputTokens": 0,
+      "error": "Jev 401: {\"detail\":{\"error_type\":\"authentication_error\",\"message\":\"Cannot authenticate with the server. Please check your API key and try again.\"}}"
+    },
+    {
+      "productId": "sima",
+      "productName": "SIMA",
+      "companyName": "DeepMind",
+      "website": "https://deepmind.google/blog/sima-2-an-agent-that-plays-reasons-and-learns-with-you-in-virtual-3d-worlds/",
+      "current": [
+        {
+          "layerId": "models",
+          "categoryId": "models.embodiedModels",
+          "directionIds": [
+            "virtualEnvironmentAgents"
+          ]
+        }
+      ],
+      "suggested": {
+        "layerId": "",
+        "categoryId": "",
+        "directionId": ""
+      },
+      "confidence": {
+        "layer": 0,
+        "category": 0,
+        "direction": null,
+        "overall": 0
+      },
+      "probabilities": {
+        "layer": {},
+        "category": {},
+        "direction": {}
+      },
+      "qualificationProbability": 0,
+      "evidenceScore": 0,
+      "evidenceConfidence": 0,
+      "recommendedAction": "接口失败",
+      "mismatch": "巡检请求未完成",
+      "model": "jev-latest",
+      "inputTokens": 0,
+      "error": "Jev 401: {\"detail\":{\"error_type\":\"authentication_error\",\"message\":\"Cannot authenticate with the server. Please check your API key and try again.\"}}"
+    }
+  ]
+}
