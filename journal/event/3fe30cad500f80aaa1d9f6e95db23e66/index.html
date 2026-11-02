@@ -1,5 +1,6 @@
 <!doctype html>
-<html lang="zh-CN"><head><script>(() => {
+<html lang="zh-CN">
+  <head><script>(() => {
   const url = new URL(location.href);
   const route = url.searchParams.get('__pages_route');
   if (route && (!route.startsWith('/') || route.startsWith('//'))) return;
@@ -7,6 +8,40 @@
   if (destination.origin !== location.origin) return;
   const pathname = destination.pathname.startsWith('/apps/') ? destination.pathname : destination.pathname.replace(/\/$/, '') || '/';
   history.replaceState(null, '', pathname + destination.search + destination.hash);
-})();</script><meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="description" content="文章、研究与作品的个人空间。记录关于 AI、技术与产品的思考，把想法付诸实践。" /><link rel="stylesheet" href="/site/ui.css" /><title>Xiaowei</title>  <script type="module" crossorigin src="/assets/index-C4p9wqfB.js"></script>
-  <link rel="stylesheet" crossorigin href="/assets/index-DOR_vFOC.css">
-</head><body><div id="root"></div></body></html>
+})();</script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>重新理解 GraphQL - 03：Facebook 的后端体系——Ent、TAO 与图数据基础设施 · Xiaowei</title>
+    <meta name="description" content="Facebook 社交图数据基础设施的演进。 TAO：对象、关联关系与分布式缓存。 Ent：业务实体与数据访问抽象。 Graph-aware cache 的设计思想。 GraphQL 的查询模型如何与后端数据访问体系协同。 Facebook 哪些技术实践已经公开，哪些内部能力难以复制？ 本章回答：GraphQL 在 Facebook 内部的工程收" />
+    <meta name="author" content="Xiaowei Hou" />
+    <meta name="theme-color" content="#faf9f6" />
+    <link rel="icon" href="/favicon.ico" sizes="32x32" />
+    <link rel="icon" href="/brand/icon-16.png" type="image/png" sizes="16x16" />
+    <link rel="icon" href="/brand/icon-32.png" type="image/png" sizes="32x32" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" sizes="any" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" sizes="180x180" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="canonical" href="https://butcherv.github.io/journal/event/3fe30cad500f80aaa1d9f6e95db23e66" />
+    <meta property="og:site_name" content="Xiaowei" />
+    <meta property="og:type" content="article" />
+    <meta property="og:locale" content="zh_CN" />
+    <meta property="og:title" content="重新理解 GraphQL - 03：Facebook 的后端体系——Ent、TAO 与图数据基础设施 · Xiaowei" />
+    <meta property="og:description" content="Facebook 社交图数据基础设施的演进。 TAO：对象、关联关系与分布式缓存。 Ent：业务实体与数据访问抽象。 Graph-aware cache 的设计思想。 GraphQL 的查询模型如何与后端数据访问体系协同。 Facebook 哪些技术实践已经公开，哪些内部能力难以复制？ 本章回答：GraphQL 在 Facebook 内部的工程收" />
+    <meta property="og:url" content="https://butcherv.github.io/journal/event/3fe30cad500f80aaa1d9f6e95db23e66" />
+    <meta property="og:image" content="https://butcherv.github.io/brand/social-card.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Xiaowei" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:creator" content="@xiaowei_911" />
+    <meta name="twitter:title" content="重新理解 GraphQL - 03：Facebook 的后端体系——Ent、TAO 与图数据基础设施 · Xiaowei" />
+    <meta name="twitter:description" content="Facebook 社交图数据基础设施的演进。 TAO：对象、关联关系与分布式缓存。 Ent：业务实体与数据访问抽象。 Graph-aware cache 的设计思想。 GraphQL 的查询模型如何与后端数据访问体系协同。 Facebook 哪些技术实践已经公开，哪些内部能力难以复制？ 本章回答：GraphQL 在 Facebook 内部的工程收" />
+    <meta name="twitter:image" content="https://butcherv.github.io/brand/social-card.png" />
+    <link rel="stylesheet" href="/site/ui.css" />
+    <script type="module" crossorigin src="/assets/index-uRsHeXAl.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-DOR_vFOC.css">
+  </head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>

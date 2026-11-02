@@ -1,5 +1,6 @@
 <!doctype html>
-<html lang="zh-CN"><head><script>(() => {
+<html lang="zh-CN">
+  <head><script>(() => {
   const url = new URL(location.href);
   const route = url.searchParams.get('__pages_route');
   if (route && (!route.startsWith('/') || route.startsWith('//'))) return;
@@ -7,6 +8,40 @@
   if (destination.origin !== location.origin) return;
   const pathname = destination.pathname.startsWith('/apps/') ? destination.pathname : destination.pathname.replace(/\/$/, '') || '/';
   history.replaceState(null, '', pathname + destination.search + destination.hash);
-})();</script><meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="description" content="文章、研究与作品的个人空间。记录关于 AI、技术与产品的思考，把想法付诸实践。" /><link rel="stylesheet" href="/site/ui.css" /><title>Xiaowei</title>  <script type="module" crossorigin src="/assets/index-C4p9wqfB.js"></script>
-  <link rel="stylesheet" crossorigin href="/assets/index-DOR_vFOC.css">
-</head><body><div id="root"></div></body></html>
+})();</script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>重新理解 GraphQL - 05：现代 Web 架构演进——RSC 如何改变 GraphQL 的价值？ · Xiaowei</title>
+    <meta name="description" content="从 CSR、SSR 到 RSC：前后端职责如何变化？ RSC 的核心变化：组件可以直接访问服务端数据层 RSC 与 Relay：两种不同的数据依赖组织方式 服务端组件并不会自动解决 N+1 与缓存问题 GraphQL @defer、@stream 与 React Suspense：数据的增量交付与界面的渐进渲染 RSC 的适用边界：哪些问题仍然需要" />
+    <meta name="author" content="Xiaowei Hou" />
+    <meta name="theme-color" content="#faf9f6" />
+    <link rel="icon" href="/favicon.ico" sizes="32x32" />
+    <link rel="icon" href="/brand/icon-16.png" type="image/png" sizes="16x16" />
+    <link rel="icon" href="/brand/icon-32.png" type="image/png" sizes="32x32" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" sizes="any" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" sizes="180x180" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="canonical" href="https://butcherv.github.io/journal/event/3fe30cad500f8090a393c049b0ddbc82" />
+    <meta property="og:site_name" content="Xiaowei" />
+    <meta property="og:type" content="article" />
+    <meta property="og:locale" content="zh_CN" />
+    <meta property="og:title" content="重新理解 GraphQL - 05：现代 Web 架构演进——RSC 如何改变 GraphQL 的价值？ · Xiaowei" />
+    <meta property="og:description" content="从 CSR、SSR 到 RSC：前后端职责如何变化？ RSC 的核心变化：组件可以直接访问服务端数据层 RSC 与 Relay：两种不同的数据依赖组织方式 服务端组件并不会自动解决 N+1 与缓存问题 GraphQL @defer、@stream 与 React Suspense：数据的增量交付与界面的渐进渲染 RSC 的适用边界：哪些问题仍然需要" />
+    <meta property="og:url" content="https://butcherv.github.io/journal/event/3fe30cad500f8090a393c049b0ddbc82" />
+    <meta property="og:image" content="https://butcherv.github.io/brand/social-card.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Xiaowei" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:creator" content="@xiaowei_911" />
+    <meta name="twitter:title" content="重新理解 GraphQL - 05：现代 Web 架构演进——RSC 如何改变 GraphQL 的价值？ · Xiaowei" />
+    <meta name="twitter:description" content="从 CSR、SSR 到 RSC：前后端职责如何变化？ RSC 的核心变化：组件可以直接访问服务端数据层 RSC 与 Relay：两种不同的数据依赖组织方式 服务端组件并不会自动解决 N+1 与缓存问题 GraphQL @defer、@stream 与 React Suspense：数据的增量交付与界面的渐进渲染 RSC 的适用边界：哪些问题仍然需要" />
+    <meta name="twitter:image" content="https://butcherv.github.io/brand/social-card.png" />
+    <link rel="stylesheet" href="/site/ui.css" />
+    <script type="module" crossorigin src="/assets/index-uRsHeXAl.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-DOR_vFOC.css">
+  </head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>

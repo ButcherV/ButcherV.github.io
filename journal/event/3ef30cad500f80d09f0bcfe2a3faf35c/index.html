@@ -1,5 +1,6 @@
 <!doctype html>
-<html lang="zh-CN"><head><script>(() => {
+<html lang="zh-CN">
+  <head><script>(() => {
   const url = new URL(location.href);
   const route = url.searchParams.get('__pages_route');
   if (route && (!route.startsWith('/') || route.startsWith('//'))) return;
@@ -7,6 +8,40 @@
   if (destination.origin !== location.origin) return;
   const pathname = destination.pathname.startsWith('/apps/') ? destination.pathname : destination.pathname.replace(/\/$/, '') || '/';
   history.replaceState(null, '', pathname + destination.search + destination.hash);
-})();</script><meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="description" content="文章、研究与作品的个人空间。记录关于 AI、技术与产品的思考，把想法付诸实践。" /><link rel="stylesheet" href="/site/ui.css" /><title>Xiaowei</title>  <script type="module" crossorigin src="/assets/index-C4p9wqfB.js"></script>
-  <link rel="stylesheet" crossorigin href="/assets/index-DOR_vFOC.css">
-</head><body><div id="root"></div></body></html>
+})();</script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Databricks 收购 Electric · Xiaowei</title>
+    <meta name="description" content="Electric（原 ElectricSQL，法律实体为 Electric DB Limited） 不是传统数据库公司，核心是 Postgres 的实时同步层 + 本地 Postgres。 2026 年 8 月，Electric 加入 Databricks，并直接进入 Neon 团队。 把 Postgres 编译成轻量的 WebAssembly 版本，可" />
+    <meta name="author" content="Xiaowei Hou" />
+    <meta name="theme-color" content="#faf9f6" />
+    <link rel="icon" href="/favicon.ico" sizes="32x32" />
+    <link rel="icon" href="/brand/icon-16.png" type="image/png" sizes="16x16" />
+    <link rel="icon" href="/brand/icon-32.png" type="image/png" sizes="32x32" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" sizes="any" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" sizes="180x180" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="canonical" href="https://butcherv.github.io/journal/event/3ef30cad500f80d09f0bcfe2a3faf35c" />
+    <meta property="og:site_name" content="Xiaowei" />
+    <meta property="og:type" content="article" />
+    <meta property="og:locale" content="zh_CN" />
+    <meta property="og:title" content="Databricks 收购 Electric · Xiaowei" />
+    <meta property="og:description" content="Electric（原 ElectricSQL，法律实体为 Electric DB Limited） 不是传统数据库公司，核心是 Postgres 的实时同步层 + 本地 Postgres。 2026 年 8 月，Electric 加入 Databricks，并直接进入 Neon 团队。 把 Postgres 编译成轻量的 WebAssembly 版本，可" />
+    <meta property="og:url" content="https://butcherv.github.io/journal/event/3ef30cad500f80d09f0bcfe2a3faf35c" />
+    <meta property="og:image" content="https://butcherv.github.io/brand/social-card.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Xiaowei" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:creator" content="@xiaowei_911" />
+    <meta name="twitter:title" content="Databricks 收购 Electric · Xiaowei" />
+    <meta name="twitter:description" content="Electric（原 ElectricSQL，法律实体为 Electric DB Limited） 不是传统数据库公司，核心是 Postgres 的实时同步层 + 本地 Postgres。 2026 年 8 月，Electric 加入 Databricks，并直接进入 Neon 团队。 把 Postgres 编译成轻量的 WebAssembly 版本，可" />
+    <meta name="twitter:image" content="https://butcherv.github.io/brand/social-card.png" />
+    <link rel="stylesheet" href="/site/ui.css" />
+    <script type="module" crossorigin src="/assets/index-uRsHeXAl.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-DOR_vFOC.css">
+  </head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
