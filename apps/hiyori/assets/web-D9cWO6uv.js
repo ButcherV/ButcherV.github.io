@@ -1,0 +1,1 @@
+import{gt as e}from"./index-CyPyCze2.js";var t=class extends e{async show(e){}async hide(e){}};export{t as SplashScreenWeb};

@@ -1,1 +1,0 @@
-import{mt as e}from"./index-DoqSPVv6.js";var t=class extends e{async show(e){}async hide(e){}};export{t as SplashScreenWeb};
