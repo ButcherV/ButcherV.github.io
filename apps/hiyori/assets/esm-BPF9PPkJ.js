@@ -1,0 +1,2 @@
+const __vite__mapDeps=(i,m=__vite__mapDeps,d=(m.f||(m.f=["assets/web-h0AhRyTm.js","assets/index-A-RzNtzF.js","assets/chunk-react-me2dJTid.js","assets/chunk-motion-CoevNixQ.js","assets/rolldown-runtime-Cn8xt2Gj.js","assets/chunk-three-B-tiDzcy.js","assets/index-CW6RiuWS.css","assets/definitions-BY_Qh97D.js"])))=>i.map(i=>d[i]);
+import{l as e}from"./chunk-react-me2dJTid.js";import{_t as t}from"./index-A-RzNtzF.js";var n=t(`Haptics`,{web:()=>e(()=>import(`./web-h0AhRyTm.js`),__vite__mapDeps([0,1,2,3,4,5,6,7])).then(e=>new e.HapticsWeb)});export{n as t};
